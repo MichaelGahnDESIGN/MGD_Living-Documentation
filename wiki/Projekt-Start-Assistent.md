@@ -1,9 +1,12 @@
-# Projekt-Start-Assistent
+# Projekt-Start-Assistent – Kompatibilitätsverweis
 
-Der Projekt-Start-Assistent richtet neue und bestehende Projekte als
-verständliche, geschützte Arbeitsumgebung ein. Er verbindet die Living
-Documentation mit einer lokalen Startseite, globalen Agentenregeln und einem
-gezielten Skill-Audit.
+Der frühere Projekt-Start-Assistent bleibt für bestehende Installationen
+erhalten. Die zentrale AI-Dev-OS-Projektzentrale ist jetzt der
+[MGD_AI-Projektmanager](https://github.com/MichaelGahnDESIGN/MGD_AI-Projektmanager).
+Neue Projekte, Migrationen, `/Dashboard` und Skill-Audits werden dort geführt.
+
+Dieser Übergang verändert keine bestehende Dokumentation, keine Skills und
+keine geschützten Inhalte aus `SECRETS/` oder `USER CONCEPT/`.
 
 ## Was entsteht?
 

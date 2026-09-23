@@ -4,6 +4,12 @@ Dieses Repository folgt einer einfachen, nachvollziehbaren Versionsgeschichte.
 Ein Release wird erst eingetragen, wenn der entsprechende Stand veröffentlicht
 ist.
 
+## 0.3.0 – 2026-09-23
+
+- Der frühere `project-start-assistant` ist jetzt ein Kompatibilitätsverweis auf
+  den zentralen [MGD_AI-Projektmanager](https://github.com/MichaelGahnDESIGN/MGD_AI-Projektmanager).
+  Damit gibt es keine doppelte MGD-Projektzentrale mehr.
+
 ## 0.2.1 – 2026-09-23
 
 - Release-Paket-Skript korrigiert: absolute und repository-relative Zielordner

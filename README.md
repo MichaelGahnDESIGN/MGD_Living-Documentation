@@ -135,26 +135,17 @@ den nächsten Schritt. Nicht erreichte Ziele bleiben sichtbar als offener Punkt
 oder Risiko. Die vollständige Anleitung mit Vorlagen steht in
 [docs/autopilot-integration.md](docs/autopilot-integration.md).
 
-## Projekt-Start-Assistent
+## Projekt-Start-Assistent – kompatibler Übergang
 
-Der Skill `project-start-assistant` macht aus einem neuen oder bestehenden
-Repository eine verständliche Arbeitsumgebung. Er erstellt eine lokale
-`index.html` als Dashboard und erklärt darin in kurzen Sätzen, wie Menschen und
-Skills zusammenarbeiten. Dieselbe Datei kann – falls die jeweilige Oberfläche
-es unterstützt – in ChatGPT Codex als Site oder in Claude Code als Artefakt
-gezeigt werden. Die lokale Datei bleibt immer die portable, versionierte Quelle.
+Der frühere `project-start-assistant` bleibt als kompatibler Verweis für
+bestehende Installationen erhalten. Die zentrale Projektzentrale mit
+`/Dashboard`, Light/Dark-Modus, Tool-Akzentfarben, Einstellungs-Zahnrad,
+Bestandsprojekt-Migration und Skill-Audit ist jetzt der
+[MGD_AI-Projektmanager](https://github.com/MichaelGahnDESIGN/MGD_AI-Projektmanager).
 
-Der Assistent richtet zwei geschützte Ordner ein: `SECRETS/` für lokale
-sensible Daten und `USER CONCEPT/` für Ideen und Rohmaterial. Beide werden
-standardmäßig ignoriert. `SECRETS/` wird ohne konkrete Zustimmung für einen
-benannten Pfad weder gelesen noch verändert oder gelöscht; Dateien aus
-`USER CONCEPT/` werden bei Bedarf kopiert, nicht automatisch verschoben.
-
-Zusätzlich prüft der Assistent bei neuen und bestehenden Projekten die
-installierten Skills. Er gibt begründete Empfehlungen für Ergänzungen oder
-eventuell entbehrliche Skills, installiert oder entfernt aber nichts ohne
-deine ausdrückliche Entscheidung. Die vollständige Anleitung steht in
-[docs/projekt-start-assistent.md](docs/projekt-start-assistent.md).
+So bleibt Living Documentation auf ihre Kernaufgabe konzentriert: die
+kanonische, nachweisbare Wissensbasis eines Projekts. Der Projektmanager
+verlinkt sie und erzeugt keine zweite Dokumentationswahrheit.
 
 ## Interaktive Living Documentation
 

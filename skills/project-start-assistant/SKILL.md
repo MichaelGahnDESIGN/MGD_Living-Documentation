@@ -1,9 +1,21 @@
 ---
 name: project-start-assistant
-description: Richtet neue oder bestehende Softwareprojekte sicher als dokumentierte, skill-gestützte Arbeitsumgebung ein. Verwenden für Projektstarts, Bestandsprojekt-Migrationen, Projekt-Dashboards, Skill-Audits und globale Agentenregeln.
+description: Kompatibilitätsverweis für bestehende Installationen. Für Projektstart, Migration, Dashboard und Skill-Audit den MGD_AI-Projektmanager verwenden.
 ---
 
-# Projekt-Start-Assistent
+# Kompatibilitätsverweis: Projekt-Start-Assistent
+
+Dieser Skill wird nicht mehr als eigenständige Projektzentrale weiterentwickelt.
+Für neue Projekte, Bestandsprojekt-Migrationen, `/Dashboard`, Skill-Audits und
+die zentrale AI-Dev-OS-Steuerung verwende den
+[MGD_AI-Projektmanager](https://github.com/MichaelGahnDESIGN/MGD_AI-Projektmanager).
+
+Er bleibt nur erhalten, damit bestehende Installationen nicht brechen. Er löscht,
+verschiebt oder verändert keine bestehende Dokumentation, keine Skills und
+insbesondere keine Inhalte aus `SECRETS/` oder `USER CONCEPT/`.
+
+> Die nachstehenden früheren Hinweise sind nur historische Referenz und dürfen
+> nicht mehr als neue Projektzentrale eingerichtet werden.
 
 Richte ein Projekt so ein, dass Menschen und Agenten den aktuellen Stand,
 Dokumentation, Aufgaben und Schutzgrenzen schnell verstehen. Arbeite klein,
