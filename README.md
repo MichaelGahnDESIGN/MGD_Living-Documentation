@@ -178,6 +178,25 @@ prüfen:
 - Gleichzeitige Änderungen können normale Git-Merge-Konflikte erzeugen.
 - Historische Dokumente dürfen keine aktuelle Spezifikation überstimmen.
 
+## Empfohlene Begleit-Skills
+
+Living Documentation ist einer von vier zusammengehörigen Skills für Claude
+Code und ChatGPT Codex, die im selben Projekt oft sinnvoll zusammenspielen:
+
+| Skill | Repository | Warum er mit Living Documentation zusammenspielt |
+| --- | --- | --- |
+| MGD_DEV_SKILL | [MichaelGahnDESIGN/MGD_DEV_SKILL](https://github.com/MichaelGahnDESIGN/MGD_DEV_SKILL) | Gleicht vor jedem Release den dokumentierten Stand mit dem tatsächlichen Projektstand ab und hält Sync-, Backup- und Testabläufe fest. |
+| Fragenkatalog-Skill | [MichaelGahnDESIGN/Fragenkatalog-Skill](https://github.com/MichaelGahnDESIGN/Fragenkatalog-Skill) | Unbeantwortete Design-Fragen aus dem interaktiven Fragenkatalog fließen als offene Punkte in die Living Documentation ein. |
+| MGD_Todo_SKILL | [MichaelGahnDESIGN/MGD_Todo_SKILL](https://github.com/MichaelGahnDESIGN/MGD_Todo_SKILL) | Todos in der selbst-gehosteten `TODO.html` lassen sich auf Dokumentations-Abschnitte verlinken. |
+
+> [!NOTE]
+> Beim allerersten Einsatz von Living Documentation in einem Projekt prüft der
+> Skill aktiv per Datei-/Verzeichnisprüfung, ob die anderen drei Skills schon
+> installiert sind, und bietet fehlende Skills gezielt zur Installation an –
+> kein reiner Prosa-Hinweis. Details stehen im Abschnitt „Begleit-Skill-Check
+> (bei Erstlauf)" in
+> [skills/living-documentation/SKILL.md](skills/living-documentation/SKILL.md).
+
 ## Wiki
 
 Die ausführlichen, versionierten Wiki-Quellen liegen im Ordner [wiki/](wiki/).
