@@ -14,3 +14,8 @@ ist.
   Entfernen, JSON-Import und HTML-Export.
 - Versionierte Quellen für ein ausführliches GitHub-Wiki.
 - MIT-Lizenz für freie Nachnutzung und Weiterentwicklung.
+- Begleit-Skill-Check bei Erstlauf: prüft aktiv per Datei-/Verzeichnisprüfung,
+  ob MGD_DEV_SKILL, Fragenkatalog-Skill und MGD_Todo_SKILL im Projekt oder
+  global installiert sind, bietet fehlende Skills gezielt zur Installation an
+  und dokumentiert das Ergebnis auf der Einstiegsseite als Marker für
+  künftige Läufe.

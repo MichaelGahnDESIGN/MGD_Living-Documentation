@@ -27,3 +27,60 @@ die Spezifikation nicht durch einen kurzen Aufgabentext ersetzen.
 Halte die Quellen im Repository aktuell und kopiere nur freigegebene Inhalte
 in ein externes Wiki. So bleiben Änderungen reviewbar und ein Wiki-Ausfall oder
 eine Berechtigungsänderung gefährdet nicht die kanonische Projektdokumentation.
+
+## Mit den anderen MGD-Skills
+
+Living Documentation ist einer von vier zusammengehörigen Skills für Claude
+Code und ChatGPT Codex. Beim Erstlauf in einem Projekt prüft der Skill aktiv,
+ob die anderen drei bereits installiert sind, und bietet sie bei Bedarf zur
+Installation an (siehe „Begleit-Skill-Check (bei Erstlauf)" in
+[skills/living-documentation/SKILL.md](../skills/living-documentation/SKILL.md)).
+
+### MGD_DEV_SKILL
+
+[MichaelGahnDESIGN/MGD_DEV_SKILL](https://github.com/MichaelGahnDESIGN/MGD_DEV_SKILL)
+kümmert sich um Release, Sync, Backup, Cleanup und Tests. Praktisches
+Zusammenspiel:
+
+- Vor einem `/dev`-Release den aktuellen Stand aus den Registern
+  „Entscheidungen", „Offene Punkte" und „Risiken" gegen den tatsächlichen
+  Projektstand prüfen, bevor der Release als bereit gilt.
+- Nach einem erfolgreichen Test- oder Deployment-Lauf des DEV-Skills genau die
+  Aussage dokumentieren, die tatsächlich geprüft wurde (siehe
+  [Arbeitsweise](Arbeitsweise.md)), statt sie pauschal als „fertig" zu
+  übernehmen.
+- Der Changelog-Pflege des DEV-Skills entsprechende Einträge in
+  [CHANGELOG.md](../CHANGELOG.md) und im bestätigten Projektstand
+  gegenüberstellen, damit beide Quellen konsistent bleiben.
+
+### Fragenkatalog-Skill
+
+[MichaelGahnDESIGN/Fragenkatalog-Skill](https://github.com/MichaelGahnDESIGN/Fragenkatalog-Skill)
+sammelt Design-Fragen mit KI-Antworten aus wählbarer Experten-Perspektive,
+inklusive einer Rechts-Kategorie. Praktisches Zusammenspiel:
+
+- Eine unbeantwortete Frage aus dem Fragenkatalog wird als offener Punkt mit
+  Verweis auf die Katalog-Quelle dokumentiert, nicht als eigenständiger
+  Fließtext dupliziert.
+- Wird eine Frage im Fragenkatalog beantwortet und wirkt sich die Antwort auf
+  eine bestehende Architektur- oder Produktentscheidung aus, wird daraus ein
+  Eintrag im Register „Entscheidungen" mit Begründung und Quelle.
+- Fragen aus der Rechts-Kategorie, die eine dokumentierte Grenze berühren
+  (siehe [Sicherheit](Sicherheit.md)), werden als Risiko statt als einfacher
+  offener Punkt geführt, solange keine Freigabe vorliegt.
+
+### MGD_Todo_SKILL
+
+[MichaelGahnDESIGN/MGD_Todo_SKILL](https://github.com/MichaelGahnDESIGN/MGD_Todo_SKILL)
+verwaltet Projekt-Todos in einer selbst-gehosteten, sortier- und
+durchsuchbaren `TODO.html`. Praktisches Zusammenspiel:
+
+- Ein Todo verweist über einen kurzen Quellenhinweis auf den betroffenen
+  Dokumentationsabschnitt (z. B. eine Entscheidung oder ein offenes Risiko),
+  statt die Spezifikation im Todo-Text zu wiederholen.
+- Wird ein Todo abgeschlossen, das eine offene Dokumentationsaussage betraf,
+  wird der zugehörige Eintrag in Living Documentation auf „bestätigt"
+  aktualisiert oder – falls er sich erledigt hat – ins Archiv verschoben.
+- Die Trennung bleibt klar: Die `TODO.html` beantwortet „Was ist zu tun?",
+  Living Documentation beantwortet „Warum, in welchem Kontext und nach
+  welchem aktuellen Stand?" (siehe Abschnitt „Mit Aufgabenlisten" oben).
