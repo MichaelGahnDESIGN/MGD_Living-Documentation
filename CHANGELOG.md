@@ -4,6 +4,11 @@ Dieses Repository folgt einer einfachen, nachvollziehbaren Versionsgeschichte.
 Ein Release wird erst eingetragen, wenn der entsprechende Stand veröffentlicht
 ist.
 
+## 0.2.1 – 2026-09-23
+
+- Release-Paket-Skript korrigiert: absolute und repository-relative Zielordner
+  werden sicher unterschieden.
+
 ## 0.2.0 – 2026-09-23
 
 - Living Documentation ist verbindlich mit dem `$autopilot`-Zyklus verzahnt:

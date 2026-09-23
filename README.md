@@ -268,7 +268,7 @@ Ein reproduzierbares ZIP-Paket aus dem aktuellen Git-Stand samt SHA-256-Prüfsum
 erzeugst du mit:
 
 ```bash
-./scripts/build-release-package.sh 0.2.0
+./scripts/build-release-package.sh 0.2.1
 ```
 
 Das Skript verwendet `git archive`; lokale, ignorierte Dateien wie `SECRETS/`
