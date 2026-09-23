@@ -31,6 +31,8 @@ für Menschen wie Agenten direkt bearbeitbar.
 - Schlanke Übergaben für neue Teammitglieder oder Agenten
 - Verbindliche Verzahnung mit `$autopilot`: Laufvertrag, Grundlinie,
   Gegenprobe und ehrlicher Abschlussbefund gehören zum Arbeitszyklus
+- Projekt-Start-Assistent für neue und bestehende Projekte: Dashboard,
+  Schutzordner, globale Agentenregeln und gezielter Skill-Audit
 - Eine optionale, self-contained HTML-Übersicht: Suche, Filter, Ergänzen,
   Bearbeiten, Entfernen und Export direkt im Browser
 - Keine Datenbank, kein Server, kein CDN, kein Tracking
@@ -42,27 +44,40 @@ skills/living-documentation/
   SKILL.md                                  # Anweisungen für Coding-Agenten
   references/dokumentationsmodell.md        # Struktur und Vorlagen
   agents/openai.yaml                        # Codex-Metadaten
+skills/project-start-assistant/
+  SKILL.md                                  # Projektstart und Bestandsmigration
+  references/                               # Schutz-, Audit- und Migrationsregeln
+  assets/                                   # Dashboard und Projektvorlagen
 living-documentation/
   LIVING_DOCUMENTATION.template.html        # Lokale interaktive Übersicht
 docs/
   setup.md                                  # Installation und Ersteinrichtung
   html-uebersicht.md                        # Datenformat und Browser-Bedienung
   autopilot-integration.md                  # verbindlicher Dokumentationszyklus
+  projekt-start-assistent.md                # Dashboard, Schutzbereiche und Skill-Audit
 wiki/                                       # Quellen für das GitHub-Wiki
 ```
 
 ## Installation
 
+Für den vollständigen Ablauf installiere beide Skill-Ordner:
+
+- `skills/living-documentation` für die laufende, kanonische Dokumentation;
+- `skills/project-start-assistant` für Projektstart, Migration, Dashboard und
+  Skill-Audit.
+
 ### ChatGPT Codex – global
 
-Kopiere den Ordner `skills/living-documentation` nach:
+Kopiere beide Skill-Ordner jeweils nach:
 
 ```text
 ~/.codex/skills/living-documentation/
+~/.codex/skills/project-start-assistant/
 ```
 
 Mit dem Codex-Skill-Installer kann das Repository über den Pfad
-`skills/living-documentation` installiert werden.
+`skills/living-documentation` oder `skills/project-start-assistant` installiert
+werden.
 
 ### Claude Code – projektlokal
 
@@ -119,6 +134,27 @@ Der Abschluss dokumentiert Ergebnis, real ausgeführte Prüfungen, Grenzen und
 den nächsten Schritt. Nicht erreichte Ziele bleiben sichtbar als offener Punkt
 oder Risiko. Die vollständige Anleitung mit Vorlagen steht in
 [docs/autopilot-integration.md](docs/autopilot-integration.md).
+
+## Projekt-Start-Assistent
+
+Der Skill `project-start-assistant` macht aus einem neuen oder bestehenden
+Repository eine verständliche Arbeitsumgebung. Er erstellt eine lokale
+`index.html` als Dashboard und erklärt darin in kurzen Sätzen, wie Menschen und
+Skills zusammenarbeiten. Dieselbe Datei kann – falls die jeweilige Oberfläche
+es unterstützt – in ChatGPT Codex als Site oder in Claude Code als Artefakt
+gezeigt werden. Die lokale Datei bleibt immer die portable, versionierte Quelle.
+
+Der Assistent richtet zwei geschützte Ordner ein: `SECRETS/` für lokale
+sensible Daten und `USER CONCEPT/` für Ideen und Rohmaterial. Beide werden
+standardmäßig ignoriert. `SECRETS/` wird ohne konkrete Zustimmung für einen
+benannten Pfad weder gelesen noch verändert oder gelöscht; Dateien aus
+`USER CONCEPT/` werden bei Bedarf kopiert, nicht automatisch verschoben.
+
+Zusätzlich prüft der Assistent bei neuen und bestehenden Projekten die
+installierten Skills. Er gibt begründete Empfehlungen für Ergänzungen oder
+eventuell entbehrliche Skills, installiert oder entfernt aber nichts ohne
+deine ausdrückliche Entscheidung. Die vollständige Anleitung steht in
+[docs/projekt-start-assistent.md](docs/projekt-start-assistent.md).
 
 ## Interaktive Living Documentation
 
@@ -225,6 +261,18 @@ Abgleich mit dem GitHub-Wiki steht in [wiki/README.md](wiki/README.md).
 
 Der aktuelle Entwicklungsstand und spätere Releases werden in
 [CHANGELOG.md](CHANGELOG.md) festgehalten.
+
+## Release-Paket erzeugen
+
+Ein reproduzierbares ZIP-Paket aus dem aktuellen Git-Stand samt SHA-256-Prüfsumme
+erzeugst du mit:
+
+```bash
+./scripts/build-release-package.sh 0.2.0
+```
+
+Das Skript verwendet `git archive`; lokale, ignorierte Dateien wie `SECRETS/`
+und `USER CONCEPT/` gelangen nicht in das Paket.
 
 ## Lizenz
 

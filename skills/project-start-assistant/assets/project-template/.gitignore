@@ -1,0 +1,8 @@
+# Lokale, sensible Projektdaten. Nur unbedenkliche Hinweise bleiben sichtbar.
+/SECRETS/**
+!/SECRETS/README.md
+!/SECRETS/zugangsdaten.template.md
+
+# Lokale Ideen und Rohmaterial. Sie werden bei Bedarf bewusst kopiert.
+/USER CONCEPT/**
+!/USER CONCEPT/README.md

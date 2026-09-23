@@ -4,11 +4,14 @@ Dieses Repository folgt einer einfachen, nachvollziehbaren Versionsgeschichte.
 Ein Release wird erst eingetragen, wenn der entsprechende Stand veröffentlicht
 ist.
 
-## Unveröffentlicht
+## 0.2.0 – 2026-09-23
 
 - Living Documentation ist verbindlich mit dem `$autopilot`-Zyklus verzahnt:
   Laufvertrag, Grundlinie, Leitplanken, Gegenprobe und ehrlicher
   Abschlussbefund werden als Dokumentationspflichten beschrieben.
+- Neuer `project-start-assistant`: sichere Projektgrundstruktur für neue und
+  bestehende Projekte, verständliches Dashboard, Skill-Audit, globale
+  Agentenregeln sowie geschützte `SECRETS/`- und `USER CONCEPT/`-Ordner.
 
 ## 0.1.0 – 2026-09-23
 

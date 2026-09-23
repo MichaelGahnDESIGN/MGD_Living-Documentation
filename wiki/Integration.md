@@ -33,6 +33,14 @@ nach einer Gegenprobe am tatsächlichen Ziel als bestätigter Stand geführt.
 Die vollständige Phasen-Zuordnung und kopierbare Vorlagen stehen unter
 [Autopilot-Integration](Autopilot-Integration).
 
+## Mit dem Projekt-Start-Assistenten
+
+Für neue oder bestehende Projekte richtet der `project-start-assistant` eine
+lokale `index.html`, globale Agentenregeln, einen Skill-Audit und die geschützten
+Ordner `SECRETS/` sowie `USER CONCEPT/` ein. Die Markdown-Dokumentation bleibt
+dabei die kanonische Quelle; das Dashboard ist ihre verständliche Übersicht.
+Details stehen unter [Projekt-Start-Assistent](Projekt-Start-Assistent).
+
 ## Mit externem Wiki
 
 Halte die Quellen im Repository aktuell und kopiere nur freigegebene Inhalte

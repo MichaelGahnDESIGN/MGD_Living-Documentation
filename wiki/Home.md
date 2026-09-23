@@ -30,6 +30,7 @@ soll. Die Dokumentation dient Menschen und Agenten als gemeinsame Arbeitsbasis.
 | Risiko entdeckt | Auswirkung, Minderung und Status festhalten |
 | Team- oder Agentenwechsel | Kurze Übergabe mit Stand, offenen Punkten, Risiken und nächstem Schritt erstellen |
 | Autonomer `$autopilot`-Lauf | Laufvertrag, Grundlinie, Gegenprobe und Abschlussbefund verbindlich dokumentieren |
+| Neues oder bestehendes Projekt einrichten | Projekt-Start-Assistent mit Dashboard, Schutzordnern und Skill-Audit nutzen |
 
 ## Navigation
 
@@ -40,3 +41,4 @@ soll. Die Dokumentation dient Menschen und Agenten als gemeinsame Arbeitsbasis.
 - [Sicherheit](Sicherheit)
 - [Integration](Integration)
 - [Autopilot-Integration](Autopilot-Integration)
+- [Projekt-Start-Assistent](Projekt-Start-Assistent)

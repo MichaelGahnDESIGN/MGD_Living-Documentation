@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Projekt-Dashboard</title>
+  <style>
+    :root { --bg:#f8fafc; --card:#fff; --ink:#1e293b; --muted:#475569; --line:#e2e8f0; --accent:#2563eb; --good:#166534; --warn:#b45309; --risk:#b91c1c; --radius:14px; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0f172a; --card:#172033; --ink:#f8fafc; --muted:#cbd5e1; --line:#334155; --accent:#93c5fd; --good:#86efac; --warn:#fcd34d; --risk:#fca5a5; } }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--accent); } a:focus-visible, summary:focus-visible { outline:3px solid var(--accent); outline-offset:3px; border-radius:4px; }
+    .wrap { max-width:1100px; margin:auto; padding:24px; } header { border-bottom:1px solid var(--line); background:var(--card); } .eyebrow { color:var(--muted); font-size:.9rem; margin:0; } h1 { margin:.15rem 0; font-size:clamp(2rem,6vw,3.7rem); line-height:1.08; letter-spacing:-.04em; } h2 { font-size:1.25rem; margin:0 0 .65rem; } .lead { max-width:65ch; margin:.5rem 0 0; color:var(--muted); }
+    nav { display:flex; gap:.9rem; flex-wrap:wrap; margin-top:1rem; } nav a { text-decoration:none; font-weight:700; padding:.35rem 0; }
+    main { padding-block:28px; } .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; } .card { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:20px; box-shadow:0 1px 2px rgb(15 23 42 / .04); } .card p { margin:.3rem 0 0; color:var(--muted); } .wide { grid-column:span 2; } .pill { display:inline-block; padding:.12rem .55rem; border-radius:999px; font-weight:700; font-size:.84rem; background:color-mix(in srgb,var(--accent) 12%,transparent); color:var(--accent); } .good { color:var(--good)!important; } .warn { color:var(--warn)!important; } .risk { color:var(--risk)!important; }
+    ul { padding-left:1.2rem; margin:.55rem 0 0; } details { margin-top:.8rem; border-top:1px solid var(--line); padding-top:.8rem; } summary { cursor:pointer; font-weight:700; } footer { color:var(--muted); border-top:1px solid var(--line); padding-block:20px; font-size:.92rem; }
+    @media (max-width:760px) { .wrap { padding:18px; } .grid { grid-template-columns:1fr; } .wide { grid-column:auto; } }
+    @media (prefers-reduced-motion:no-preference) { .card { transition:transform .2s ease, box-shadow .2s ease; } .card:hover { transform:translateY(-2px); box-shadow:0 8px 20px rgb(15 23 42 / .09); } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap">
+    <p class="eyebrow">Lokale Startseite · keine externen Dienste</p>
+    <h1>{{PROJEKTNAME}}</h1>
+    <p class="lead">{{KURZE_PROJEKTBESCHREIBUNG}}</p>
+    <nav aria-label="Projekt-Navigation"><a href="README.md">Einstieg</a><a href="DOKUMENTATION/">Dokumentation</a><a href="#assistent">So arbeitet der Assistent</a><a href="#skills">Skills</a></nav>
+  </div></header>
+  <main class="wrap">
+    <div class="grid">
+      <section class="card"><h2>Bestätigter Stand</h2><span class="pill">geprüft</span><p>{{BESTAETIGTER_STAND_MIT_PRUEFUNG}}</p></section>
+      <section class="card"><h2>Nächster kleiner Schritt</h2><p>{{NAECHSTER_SCHRITT}}</p></section>
+      <section class="card"><h2>Projekt-Schutz</h2><p><strong>SECRETS/</strong> bleibt geschützt. <strong>USER CONCEPT/</strong> sammelt lokale Ideen und Grafiken.</p></section>
+      <section class="card wide"><h2>Offene Punkte</h2><ul><li class="warn">{{OFFENER_PUNKT_1}}</li><li class="warn">{{OFFENER_PUNKT_2_ODER_ENTFERNEN}}</li></ul></section>
+      <section class="card"><h2>Risiken</h2><p class="risk">{{RISIKO_ODER_KEINS_BEKANNT}}</p></section>
+    </div>
+    <section class="card" id="assistent" style="margin-top:16px"><h2>So arbeitet der Assistent</h2>
+      <p>Der Assistent liest zuerst die Projektregeln und den aktuellen Stand. Er nimmt passende Skills nur für Aufgaben, bei denen sie wirklich helfen. Er arbeitet in kleinen Schritten und prüft jede Änderung. Er nennt offen, was noch nicht geprüft ist. Er fasst sensible Daten nicht ohne deine konkrete Zustimmung an. Deine Ideen und Grafiken bleiben in <strong>USER CONCEPT/</strong>; sie werden bei Bedarf kopiert, nicht verschoben.</p>
+    </section>
+    <section class="card" id="skills" style="margin-top:16px"><h2>Skill-Status</h2>
+      <p>{{SKILL_AUDIT_KURZFASSUNG}}</p>
+      <details><summary>Empfehlungen ansehen</summary><p>{{SKILL_EMPFEHLUNGEN_MIT_BEGRUENDUNG}}</p></details>
+    </section>
+  </main>
+  <footer><div class="wrap">Kanonische Quelle: {{KANONISCHE_DOKUMENTATIONSQUELLE}} · Aktualisiert: {{DATUM}}</div></footer>
+</body>
+</html>

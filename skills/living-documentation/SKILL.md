@@ -9,6 +9,11 @@ Nutze diesen Skill, damit die Projektdokumentation eine verlässliche,
 wartbare Quelle für den aktuellen Stand bleibt. Die Dokumentation beschreibt
 den nachweisbaren Zustand – nicht den Wunschzustand.
 
+Wenn ein neues Projekt eingerichtet oder ein bestehendes Projekt strukturell
+übernommen werden soll, nutze zusätzlich den benachbarten
+`project-start-assistant`. Er richtet Dashboard, Schutzordner, globale Regeln
+und den Skill-Audit ein; diese Dokumentation bleibt dabei die kanonische Quelle.
+
 ## Verbindliche Autopilot-Integration
 
 Wenn ein Projektziel autonom abgearbeitet wird oder der Skill `$autopilot`

@@ -12,6 +12,8 @@ Wiki-Änderungen im normalen Pull-Request- und Git-Verlauf überprüfbar.
 - [Datenformat](Datenformat.md): JSON-Schema und Regeln für Agenten
 - [Sicherheit](Sicherheit.md): Schutz- und Veröffentlichungsgrenzen
 - [Integration](Integration.md): Nutzung im Projektalltag
+- [Autopilot-Integration](Autopilot-Integration.md): verbindlicher autonomer Arbeitszyklus
+- [Projekt-Start-Assistent](Projekt-Start-Assistent.md): Dashboard, Schutzbereiche und Skill-Audit
 
 ## GitHub-Wiki kontrolliert aktualisieren
 
