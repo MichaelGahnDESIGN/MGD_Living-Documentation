@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lokale, durchsuchbare und bearbeitbare Living Documentation.">
+  <title>Projekt – Living Documentation</title>
+  <style>
+    :root { color-scheme: light dark; --ink: #1e293b; --muted: #526174; --surface: #ffffff; --page: #f8fafc; --line: #e2e8f0; --accent: #2563eb; --accent-soft: #eff6ff; --danger: #b42318; --focus: #f59e0b; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--page); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .topbar { min-height: 58px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 max(20px, calc((100% - 1240px) / 2)); background: var(--surface); border-bottom: 1px solid var(--line); }
+    .brand { font-weight: 800; letter-spacing: -.02em; }.brand span { color: var(--accent); }
+    .topbar-note { color: var(--muted); font-size: .88rem; }
+    .shell { width: min(1240px, calc(100% - 40px)); margin: 0 auto; display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 38px; }
+    aside { position: sticky; top: 24px; align-self: start; padding: 30px 0; }
+    .side-title { color: var(--muted); font-size: .73rem; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; margin: 0 0 8px; }
+    .side-nav { display: grid; gap: 3px; margin-bottom: 30px; }
+    .side-nav button { display: flex; justify-content: space-between; color: var(--ink); background: transparent; border: 0; border-radius: 7px; padding: 7px 9px; text-align: left; font-size: .9rem; font-weight: 650; }
+    .side-nav button:hover, .side-nav button.active { color: var(--accent); background: var(--accent-soft); filter: none; }.nav-count { color: var(--muted); font-variant-numeric: tabular-nums; }
+    main { padding: 42px 0 60px; min-width: 0; }
+    .eyebrow { color: var(--accent); font-size: .76rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 9px; }
+    h1 { margin: 0; font-size: clamp(2rem, 4vw, 3.05rem); letter-spacing: -.04em; line-height: 1.14; }
+    h2 { margin: 0; font-size: 1.12rem; letter-spacing: -.01em; }.subtitle { color: var(--muted); margin: 13px 0 0; max-width: 72ch; }
+    .wiki-hero { padding-bottom: 30px; border-bottom: 1px solid var(--line); }.wiki-hero .meta { margin-top: 15px; }
+    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; margin: 22px 0; }
+    .controls { display: grid; grid-template-columns: 2fr repeat(3, minmax(120px, 1fr)); gap: 12px; }
+    label { display: grid; gap: 5px; color: var(--muted); font-size: .9rem; font-weight: 650; }
+    input, select, textarea, button { font: inherit; }
+    input, select, textarea { width: 100%; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 7px; padding: 9px 10px; }
+    textarea { min-height: 96px; resize: vertical; }
+    button { color: #fff; background: var(--accent); border: 1px solid var(--accent); border-radius: 7px; padding: 9px 12px; cursor: pointer; font-weight: 700; }
+    button:hover { filter: brightness(.92); }
+    button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+    button.secondary { color: var(--ink); background: transparent; border-color: var(--line); }
+    button.danger { color: var(--danger); background: transparent; border-color: #fecdca; }
+    .actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: end; margin-top: 14px; }
+    .summary { display: flex; flex-wrap: wrap; gap: 8px; margin: 13px 0 0; color: var(--muted); }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; font-size: .82rem; }
+    .entry-list { display: grid; gap: 12px; }.entry { border: 1px solid var(--line); border-left: 4px solid var(--line); border-radius: 8px; padding: 16px; }.entry.confirmed { border-left-color: #12b76a; }.entry.decision { border-left-color: #2e90fa; }.entry.open { border-left-color: #f79009; }.entry.risk { border-left-color: #f04438; }.entry.archived { border-left-color: #98a2b3; }
+    .entry-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }.entry-title { margin: 0; font-size: 1.06rem; line-height: 1.35; }.entry-info { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }.entry-content { margin: 12px 0 0; max-width: 80ch; }.entry-footer { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-top: 15px; padding-top: 12px; border-top: 1px solid var(--line); }
+    .meta, .sources { color: var(--muted); font-size: .88rem; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: .78rem; font-weight: 750; white-space: nowrap; }
+    .badge.confirmed { background: #dcfae6; color: #05603a; }.badge.decision { background: #dbeafe; color: #1849a9; }.badge.open { background: #fff4cc; color: #855b00; }.badge.risk { background: #fee4e2; color: #b42318; }.badge.archived { background: #eaecf0; color: #344054; }
+    .row-actions { display: flex; gap: 7px; }.row-actions button { padding: 5px 8px; font-size: .82rem; }
+    dialog { color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 18px 65px rgb(0 0 0 / .28); width: min(650px, calc(100% - 28px)); padding: 20px; }
+    dialog::backdrop { background: rgb(15 23 42 / .48); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }.full { grid-column: 1 / -1; }
+    .dialog-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; }
+    .notice { margin: 0; color: var(--muted); font-size: .9rem; }.notice[role="status"] { min-height: 1.5em; }
+    .empty { color: var(--muted); padding: 24px 10px; text-align: center; }
+    footer { border-top: 1px solid var(--line); padding: 22px max(20px, calc((100% - 1240px) / 2)); color: var(--muted); font-size: .86rem; }
+    @media (max-width: 900px) { .shell { grid-template-columns: 1fr; gap: 0; width: min(100% - 28px, 1240px); } aside { position: static; padding: 20px 0 0; }.side-nav { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }.side-title { margin-top: 16px; }.topbar-note { display: none; } main { padding-top: 28px; } }
+    @media (max-width: 620px) { .controls, .form-grid { grid-template-columns: 1fr; }.full { grid-column: auto; }.side-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }.entry-head, .entry-footer { display: grid; }.actions button { width: 100%; }.topbar { padding-inline: 14px; } }
+    @media (prefers-color-scheme: dark) { :root { --ink: #e6edf7; --muted: #aab7c8; --surface: #17202d; --page: #0e1621; --line: #304155; --accent: #84adff; --accent-soft: #152f5a; }.badge.confirmed { background: #073b2b; color: #75e0a7; }.badge.decision { background: #173565; color: #b2ccff; }.badge.open { background: #4d3905; color: #f9d47a; }.badge.risk { background: #551b1b; color: #fda29b; }.badge.archived { background: #303946; color: #d0d5dd; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">MGD <span>Living Documentation</span></div>
+    <div class="topbar-note">Kanonische Quelle · lokal · versionierbar</div>
+  </header>
+  <div class="shell">
+    <aside aria-label="Wiki-Navigation">
+      <p class="side-title">Dokumentation</p>
+      <nav class="side-nav" aria-label="Statusbereiche">
+        <button type="button" class="active" data-status-nav="">Alle Einträge <span class="nav-count" data-nav-count="all">0</span></button>
+        <button type="button" data-status-nav="confirmed">Bestätigt <span class="nav-count" data-nav-count="confirmed">0</span></button>
+        <button type="button" data-status-nav="decision">Entscheidungen <span class="nav-count" data-nav-count="decision">0</span></button>
+        <button type="button" data-status-nav="open">Offene Punkte <span class="nav-count" data-nav-count="open">0</span></button>
+        <button type="button" data-status-nav="risk">Risiken <span class="nav-count" data-nav-count="risk">0</span></button>
+        <button type="button" data-status-nav="archived">Archiv <span class="nav-count" data-nav-count="archived">0</span></button>
+      </nav>
+      <p class="side-title">Arbeitsweise</p>
+      <p class="meta">Einträge sind nach Datum sortiert. Die Browseransicht bleibt lokal, bis die aktualisierte Datei exportiert und versioniert wird.</p>
+    </aside>
+    <main>
+      <section class="wiki-hero" aria-labelledby="projectTitle">
+        <p class="eyebrow">Projekt-Wiki</p>
+        <h1 id="projectTitle">Projekt – Living Documentation</h1>
+        <p class="subtitle" id="projectDescription">Der nachvollziehbare Projektstand: bestätigt, entschieden, offen und risikobehaftet.</p>
+        <p class="meta">Eine kompakte Arbeitsansicht für Menschen und Agenten.</p>
+      </section>
+      <section class="panel" aria-label="Suche und Filter">
+        <h2>Einträge finden</h2>
+      <div class="controls">
+        <label>Suche<input id="search" type="search" placeholder="Titel, Inhalt, Bereich oder Quelle durchsuchen"></label>
+        <label>Status<select id="statusFilter"><option value="">Alle Status</option></select></label>
+        <label>Typ<select id="typeFilter"><option value="">Alle Typen</option></select></label>
+        <label>Bereich<select id="areaFilter"><option value="">Alle Bereiche</option></select></label>
+      </div>
+      <div class="actions">
+        <button type="button" id="addButton">Eintrag hinzufügen</button>
+        <button type="button" class="secondary" id="exportButton">Aktualisierte HTML exportieren</button>
+        <label><span class="visually-hidden">JSON importieren</span><input id="importInput" type="file" accept="application/json,.json" hidden><button type="button" class="secondary" id="importButton">JSON importieren</button></label>
+        <button type="button" class="secondary" id="resetButton">Filter zurücksetzen</button>
+      </div>
+      <p class="notice">Die Übersicht arbeitet vollständig lokal. „Exportieren“ lädt eine neue HTML-Datei herunter; ersetze damit nach Prüfung die versionierte Originaldatei.</p>
+      <p class="notice" role="status" id="statusMessage" aria-live="polite"></p>
+      <div class="summary" id="summary"></div>
+      </section>
+      <section class="panel" aria-label="Dokumentationseinträge">
+        <div class="entry-list" id="entriesBody"></div>
+      <p class="empty" id="emptyState" hidden>Keine Einträge passen zu den aktuellen Filtern.</p>
+      </section>
+    </main>
+  </div>
+  <footer>Living Documentation – lokale, versionierbare Projektübersicht ohne externe Abhängigkeiten.</footer>
+
+  <dialog id="entryDialog">
+    <form method="dialog" id="entryForm">
+      <h2 id="dialogTitle">Eintrag hinzufügen</h2>
+      <input id="entryId" type="hidden">
+      <div class="form-grid">
+        <label class="full">Titel<input id="entryTitle" required maxlength="160"></label>
+        <label>Status<select id="entryStatus" required><option value="confirmed">Bestätigt</option><option value="decision">Entscheidung</option><option value="open">Offen</option><option value="risk">Risiko</option><option value="archived">Archiviert</option></select></label>
+        <label>Typ<input id="entryType" required placeholder="z. B. Architektur"></label>
+        <label>Bereich<input id="entryArea" required placeholder="z. B. Backend"></label>
+        <label>Datum<input id="entryDate" type="date" required></label>
+        <label class="full">Inhalt<textarea id="entryContent" required placeholder="Nachweisbarer Stand, Entscheidung, Risiko oder offene Frage"></textarea></label>
+        <label class="full">Quellen und Verweise<textarea id="entrySources" placeholder="z. B. docs/architektur.md, Testlauf vom 2026-01-01"></textarea></label>
+      </div>
+      <div class="dialog-actions"><button type="button" class="secondary" id="cancelButton">Abbrechen</button><button type="submit">Speichern</button></div>
+    </form>
+  </dialog>
+
+  <script id="livingDocumentationData" type="application/json">
+{
+  "project": {
+    "title": "Projekt – Living Documentation",
+    "description": "Ersetze diese Beispieltexte durch den nachweisbaren Stand deines Projekts."
+  },
+  "entries": [
+    {
+      "id": "D001",
+      "title": "Dokumentation eingerichtet",
+      "status": "confirmed",
+      "type": "Dokumentation",
+      "area": "Projekt",
+      "date": "2026-01-01",
+      "content": "Die Living Documentation ist die kanonische, versionierte Übersicht für bestätigten Stand, Entscheidungen, Risiken und offene Punkte.",
+      "sources": "LIVING_DOCUMENTATION.html"
+    },
+    {
+      "id": "D002",
+      "title": "Projektinformationen ergänzen",
+      "status": "open",
+      "type": "Nächster Schritt",
+      "area": "Projekt",
+      "date": "2026-01-01",
+      "content": "Ersetze die Beispiele durch reale, überprüfte Informationen. Danach diese Beispieldatensätze entfernen.",
+      "sources": "Manuell"
+    }
+  ]
+}
+  </script>
+  <script>
+    (() => {
+      const dataNode = document.getElementById('livingDocumentationData');
+      const state = JSON.parse(dataNode.textContent);
+      const labels = { confirmed: 'Bestätigt', decision: 'Entscheidung', open: 'Offen', risk: 'Risiko', archived: 'Archiviert' };
+      const body = document.getElementById('entriesBody');
+      const emptyState = document.getElementById('emptyState');
+      const search = document.getElementById('search');
+      const filters = { status: document.getElementById('statusFilter'), type: document.getElementById('typeFilter'), area: document.getElementById('areaFilter') };
+      const summary = document.getElementById('summary');
+      const message = document.getElementById('statusMessage');
+      const dialog = document.getElementById('entryDialog');
+      const form = document.getElementById('entryForm');
+      const fields = { id: document.getElementById('entryId'), title: document.getElementById('entryTitle'), status: document.getElementById('entryStatus'), type: document.getElementById('entryType'), area: document.getElementById('entryArea'), date: document.getElementById('entryDate'), content: document.getElementById('entryContent'), sources: document.getElementById('entrySources') };
+
+      const text = value => String(value || '');
+      const cleanData = value => JSON.stringify(value, null, 2).replace(/</g, '\\u003c');
+      const nextId = () => `D${String(Math.max(0, ...state.entries.map(entry => Number((entry.id || '').replace(/^D/, '')) || 0)) + 1).padStart(3, '0')}`;
+      const options = (element, values) => {
+        const previous = element.value;
+        element.querySelectorAll('option:not(:first-child)').forEach(option => option.remove());
+        [...values].sort((a, b) => a.localeCompare(b, 'de')).forEach(value => {
+          const option = document.createElement('option'); option.value = value; option.textContent = value; element.append(option);
+        });
+        element.value = [...values].includes(previous) ? previous : '';
+      };
+      const refreshFilters = () => {
+        options(filters.status, new Set(state.entries.map(entry => entry.status)));
+        options(filters.type, new Set(state.entries.map(entry => entry.type)));
+        options(filters.area, new Set(state.entries.map(entry => entry.area)));
+      };
+      const matches = entry => {
+        const needle = search.value.trim().toLocaleLowerCase('de');
+        const haystack = [entry.id, entry.title, entry.type, entry.area, entry.content, entry.sources].map(text).join(' ').toLocaleLowerCase('de');
+        return (!needle || haystack.includes(needle)) && (!filters.status.value || entry.status === filters.status.value) && (!filters.type.value || entry.type === filters.type.value) && (!filters.area.value || entry.area === filters.area.value);
+      };
+      const render = () => {
+        document.getElementById('projectTitle').textContent = state.project.title || 'Projekt – Living Documentation';
+        document.getElementById('projectDescription').textContent = state.project.description || '';
+        body.replaceChildren();
+        const shown = [...state.entries].filter(matches).sort((a, b) => text(b.date).localeCompare(text(a.date)) || text(a.id).localeCompare(text(b.id)));
+        shown.forEach(entry => {
+          const card = document.createElement('article'); card.className = `entry ${entry.status}`;
+          const head = document.createElement('div'); head.className = 'entry-head';
+          const title = document.createElement('h2'); title.className = 'entry-title'; title.textContent = entry.title;
+          const badge = document.createElement('span'); badge.className = `badge ${entry.status}`; badge.textContent = labels[entry.status] || entry.status;
+          head.append(title, badge);
+          const info = document.createElement('div'); info.className = 'entry-info';
+          [entry.id, entry.type, entry.area, entry.date].filter(Boolean).forEach(value => { const item = document.createElement('span'); item.className = 'pill'; item.textContent = value; info.append(item); });
+          const content = document.createElement('p'); content.className = 'entry-content'; content.textContent = entry.content;
+          const footer = document.createElement('div'); footer.className = 'entry-footer';
+          const sources = document.createElement('span'); sources.className = 'sources'; sources.textContent = entry.sources ? `Quelle: ${entry.sources}` : 'Keine Quelle hinterlegt';
+          const actions = document.createElement('div'); actions.className = 'row-actions';
+          const edit = document.createElement('button'); edit.type = 'button'; edit.className = 'secondary'; edit.textContent = 'Bearbeiten'; edit.addEventListener('click', () => openDialog(entry));
+          const remove = document.createElement('button'); remove.type = 'button'; remove.className = 'danger'; remove.textContent = 'Entfernen'; remove.addEventListener('click', () => removeEntry(entry.id));
+          actions.append(edit, remove); footer.append(sources, actions); card.append(head, info, content, footer); body.append(card);
+        });
+        emptyState.hidden = shown.length !== 0;
+        const counts = Object.keys(labels).map(status => `${labels[status]}: ${state.entries.filter(entry => entry.status === status).length}`);
+        summary.replaceChildren(...counts.map(value => { const item = document.createElement('span'); item.className = 'pill'; item.textContent = value; return item; }));
+        document.querySelector('[data-nav-count="all"]').textContent = state.entries.length;
+        Object.keys(labels).forEach(status => { document.querySelector(`[data-nav-count="${status}"]`).textContent = state.entries.filter(entry => entry.status === status).length; });
+        document.querySelectorAll('[data-status-nav]').forEach(button => button.classList.toggle('active', button.dataset.statusNav === filters.status.value));
+      };
+      const openDialog = entry => {
+        form.reset();
+        document.getElementById('dialogTitle').textContent = entry ? 'Eintrag bearbeiten' : 'Eintrag hinzufügen';
+        Object.entries(fields).forEach(([key, field]) => field.value = entry ? text(entry[key]) : '');
+        if (!entry) { fields.id.value = nextId(); fields.date.value = new Date().toISOString().slice(0, 10); fields.status.value = 'open'; }
+        dialog.showModal(); fields.title.focus();
+      };
+      const removeEntry = id => {
+        const entry = state.entries.find(item => item.id === id);
+        if (!entry || !confirm(`Eintrag „${entry.title}“ wirklich entfernen? Exportiere danach die HTML-Datei, damit die Änderung dauerhaft wird.`)) return;
+        state.entries = state.entries.filter(item => item.id !== id); refreshFilters(); render(); message.textContent = `${id} wurde in dieser Browseransicht entfernt. Exportiere die HTML-Datei, um die Änderung dauerhaft zu übernehmen.`;
+      };
+      form.addEventListener('submit', event => {
+        event.preventDefault();
+        const entry = Object.fromEntries(Object.entries(fields).map(([key, field]) => [key, field.value.trim()]));
+        const index = state.entries.findIndex(item => item.id === entry.id);
+        if (index >= 0) state.entries[index] = entry; else state.entries.push(entry);
+        dialog.close(); refreshFilters(); render(); message.textContent = `${entry.id} wurde in dieser Browseransicht gespeichert. Exportiere die HTML-Datei, um die Änderung dauerhaft zu übernehmen.`;
+      });
+      document.getElementById('addButton').addEventListener('click', () => openDialog());
+      document.getElementById('cancelButton').addEventListener('click', () => dialog.close());
+      document.getElementById('resetButton').addEventListener('click', () => { search.value = ''; Object.values(filters).forEach(filter => filter.value = ''); render(); });
+      document.querySelectorAll('[data-status-nav]').forEach(button => button.addEventListener('click', () => { filters.status.value = button.dataset.statusNav; render(); }));
+      [search, ...Object.values(filters)].forEach(control => control.addEventListener('input', render));
+      document.getElementById('exportButton').addEventListener('click', () => {
+        dataNode.textContent = cleanData(state);
+        const blob = new Blob(['<!doctype html>\n' + document.documentElement.outerHTML], { type: 'text/html;charset=utf-8' });
+        const link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = 'LIVING_DOCUMENTATION.html'; link.click(); URL.revokeObjectURL(link.href);
+        message.textContent = 'Die aktualisierte HTML-Datei wurde heruntergeladen. Prüfe sie und ersetze danach die versionierte Originaldatei.';
+      });
+      document.getElementById('importButton').addEventListener('click', () => document.getElementById('importInput').click());
+      document.getElementById('importInput').addEventListener('change', async event => {
+        const file = event.target.files[0]; if (!file) return;
+        try { const imported = JSON.parse(await file.text()); if (!imported.project || !Array.isArray(imported.entries)) throw new Error('Ungültiges Format'); state.project = imported.project; state.entries = imported.entries; refreshFilters(); render(); message.textContent = 'JSON wurde nur in diese Browseransicht importiert. Exportiere die HTML-Datei, um es dauerhaft zu übernehmen.'; } catch { message.textContent = 'Die JSON-Datei hat nicht das erwartete Living-Documentation-Format.'; }
+        event.target.value = '';
+      });
+      refreshFilters(); render();
+    })();
+  </script>
+</body>
+</html>
