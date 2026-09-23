@@ -58,3 +58,15 @@ versionierte Originaldatei ersetzen.
 4. Testgrenzen klar lassen: „nicht geprüft“ ist besser als eine Vermutung.
 5. Bei Entfernen oder einer größeren Umstrukturierung eine Sicherung oder einen
    nachvollziehbaren Git-Stand sicherstellen.
+
+## Autopilot verbindlich verwenden
+
+Ist `$autopilot` für einen autonomen Projektlauf aktiv, wird Living
+Documentation verbindlich mitgeführt. Vor der ersten relevanten Änderung
+gehören Ziel, Abschlussbedingung, Abbruchbedingung, Grundlinie und
+Sicherheitsleitplanken in die kanonische Projektdokumentation. Nach jedem
+Teilziel wird mindestens ein belegbarer Befund ergänzt. Ein erfolgreicher Test
+ist erst nach einer Gegenprobe am tatsächlichen Ziel ein bestätigter Stand.
+
+Die genaue Zuordnung und kopierbare Vorlagen stehen in
+[Autopilot-Integration](autopilot-integration.md).

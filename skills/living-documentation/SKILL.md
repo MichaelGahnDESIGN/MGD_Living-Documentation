@@ -9,6 +9,33 @@ Nutze diesen Skill, damit die Projektdokumentation eine verlässliche,
 wartbare Quelle für den aktuellen Stand bleibt. Die Dokumentation beschreibt
 den nachweisbaren Zustand – nicht den Wunschzustand.
 
+## Verbindliche Autopilot-Integration
+
+Wenn ein Projektziel autonom abgearbeitet wird oder der Skill `$autopilot`
+verfügbar beziehungsweise ausdrücklich aufgerufen ist, ist Living Documentation
+Teil des verbindlichen Arbeitszyklus. Dokumentation darf dann nicht erst am
+Ende aus Erinnerung ergänzt werden.
+
+Vor der ersten relevanten Änderung dokumentiere oder aktualisiere:
+
+1. **Ziel und Abschlussbedingung:** Woran ist der Auftrag messbar erledigt?
+2. **Abbruchbedingung:** Wann wird der Lauf mit einem ehrlichen offenen Befund
+   beendet statt endlos wiederholt?
+3. **Grundlinie:** Welcher Test-, Build- oder Betriebszustand lag vorher vor?
+4. **Leitplanken:** Welche Daten, Systeme oder Aktionen sind für diesen Lauf
+   geschützt beziehungsweise nur mit menschlicher Zustimmung erlaubt?
+
+Nach jedem abgeschlossenen Teilziel gehört mindestens ein belegbarer Befund in
+den aktuellen Stand, eine Entscheidung, einen offenen Punkt oder ein Risiko.
+Ein positiver Test allein reicht nicht: Prüfe die Änderung zusätzlich am
+eigentlichen Ziel, bevor sie als bestätigt markiert wird.
+
+Am Ende eines Autopilot-Laufs dokumentiere Ergebnis, tatsächlich ausgeführte
+Prüfungen, verbleibende Grenzen und den nächsten Schritt. Wurde das Ziel nicht
+erreicht, bleibt dies sichtbar als offener Punkt oder Risiko – niemals als
+implizit erledigt. Die genaue Zuordnung der Autopilot-Phasen steht in
+[Autopilot-Integration](references/autopilot-integration.md).
+
 ## Zuerst einordnen
 
 1. Lies die projektbezogenen Regeln und die bestehende Dokumentationsstruktur.

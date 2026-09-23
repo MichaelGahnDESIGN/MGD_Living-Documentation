@@ -29,6 +29,8 @@ für Menschen wie Agenten direkt bearbeitbar.
 - Sichtbare offene Punkte und Risiken
 - Test- und Verifikationsnachweise mit tatsächlichem Umfang
 - Schlanke Übergaben für neue Teammitglieder oder Agenten
+- Verbindliche Verzahnung mit `$autopilot`: Laufvertrag, Grundlinie,
+  Gegenprobe und ehrlicher Abschlussbefund gehören zum Arbeitszyklus
 - Eine optionale, self-contained HTML-Übersicht: Suche, Filter, Ergänzen,
   Bearbeiten, Entfernen und Export direkt im Browser
 - Keine Datenbank, kein Server, kein CDN, kein Tracking
@@ -45,6 +47,7 @@ living-documentation/
 docs/
   setup.md                                  # Installation und Ersteinrichtung
   html-uebersicht.md                        # Datenformat und Browser-Bedienung
+  autopilot-integration.md                  # verbindlicher Dokumentationszyklus
 wiki/                                       # Quellen für das GitHub-Wiki
 ```
 
@@ -102,6 +105,20 @@ Geprüft: npm test
 Ergebnis: 42 Tests erfolgreich
 Nicht geprüft: Staging-Deployment und reale Nutzerrollen
 ```
+
+## Verbindliche Autopilot-Integration
+
+Sobald ein autonomer Lauf mit `$autopilot` arbeitet, ist Living Documentation
+kein nachträgliches Protokoll, sondern eine verbindliche Station im Ablauf.
+Vor der ersten relevanten Änderung werden Ziel, messbare Abschluss- und
+Abbruchbedingung, Grundlinie sowie Sicherheitsleitplanken festgehalten. Nach
+jedem Teilziel folgt ein belegbarer Befund; ein positiver Werkzeugtest wird
+zusätzlich am tatsächlichen Ziel gegengeprüft.
+
+Der Abschluss dokumentiert Ergebnis, real ausgeführte Prüfungen, Grenzen und
+den nächsten Schritt. Nicht erreichte Ziele bleiben sichtbar als offener Punkt
+oder Risiko. Die vollständige Anleitung mit Vorlagen steht in
+[docs/autopilot-integration.md](docs/autopilot-integration.md).
 
 ## Interaktive Living Documentation
 

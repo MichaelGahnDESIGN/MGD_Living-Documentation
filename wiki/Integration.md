@@ -22,6 +22,17 @@ beantwortet „Warum, in welchem Kontext und nach welchem aktuellen Stand?“. E
 Todo sollte auf die relevante Spezifikation oder Entscheidung verweisen, aber
 die Spezifikation nicht durch einen kurzen Aufgabentext ersetzen.
 
+## Mit Autopilot
+
+Bei einem autonomen `$autopilot`-Lauf ist Living Documentation verbindlicher
+Bestandteil des Zyklus. Vor der ersten relevanten Änderung werden Ziel,
+Abschluss- und Abbruchbedingung, Grundlinie sowie Leitplanken dokumentiert.
+Nach jedem Teilziel folgt ein belegbarer Befund. Ein positiver Test wird erst
+nach einer Gegenprobe am tatsächlichen Ziel als bestätigter Stand geführt.
+
+Die vollständige Phasen-Zuordnung und kopierbare Vorlagen stehen unter
+[Autopilot-Integration](Autopilot-Integration).
+
 ## Mit externem Wiki
 
 Halte die Quellen im Repository aktuell und kopiere nur freigegebene Inhalte

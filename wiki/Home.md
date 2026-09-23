@@ -29,6 +29,7 @@ soll. Die Dokumentation dient Menschen und Agenten als gemeinsame Arbeitsbasis.
 | Test nicht möglich | Als offene Grenze dokumentieren, nicht als Erfolg formulieren |
 | Risiko entdeckt | Auswirkung, Minderung und Status festhalten |
 | Team- oder Agentenwechsel | Kurze Übergabe mit Stand, offenen Punkten, Risiken und nächstem Schritt erstellen |
+| Autonomer `$autopilot`-Lauf | Laufvertrag, Grundlinie, Gegenprobe und Abschlussbefund verbindlich dokumentieren |
 
 ## Navigation
 
@@ -38,3 +39,4 @@ soll. Die Dokumentation dient Menschen und Agenten als gemeinsame Arbeitsbasis.
 - [Datenformat](Datenformat)
 - [Sicherheit](Sicherheit)
 - [Integration](Integration)
+- [Autopilot-Integration](Autopilot-Integration)

@@ -4,6 +4,12 @@ Dieses Repository folgt einer einfachen, nachvollziehbaren Versionsgeschichte.
 Ein Release wird erst eingetragen, wenn der entsprechende Stand veröffentlicht
 ist.
 
+## Unveröffentlicht
+
+- Living Documentation ist verbindlich mit dem `$autopilot`-Zyklus verzahnt:
+  Laufvertrag, Grundlinie, Leitplanken, Gegenprobe und ehrlicher
+  Abschlussbefund werden als Dokumentationspflichten beschrieben.
+
 ## 0.1.0 – 2026-09-23
 
 - Portabler Skill `living-documentation` für Codex, Claude Code und
