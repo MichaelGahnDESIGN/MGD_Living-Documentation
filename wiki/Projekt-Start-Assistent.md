@@ -17,7 +17,8 @@ keine geschützten Inhalte aus `SECRETS/` oder `USER CONCEPT/`.
 - ein geschütztes lokales `SECRETS/` mit Vorlagen ohne echte Werte;
 - ein lokales `USER CONCEPT/` für Ideen, Grafiken und Referenzen;
 - `.gitignore`-Regeln für beide Schutzordner;
-- ein Bericht über vorhandene Skills und begründete Empfehlungen.
+- ein Bericht über vorhandene Skills und begründete Empfehlungen;
+- auf Wunsch die Karte (Graphify), siehe unten.
 
 ## Dashboard überall nutzen
 
@@ -46,6 +47,15 @@ Der Assistent liest zuerst Regeln, Git-Status, Dokumentation, `.gitignore`,
 Automatisierungen und vorhandene Skills. Er ergänzt nur konfliktfreie
 Bestandteile. Bestehende Regeln, Workflows, Build-Skripte, produktive Systeme,
 Secrets und Datenbanken werden nicht stillschweigend verändert.
+
+## Karte (Graphify)
+
+Der Assistent bietet die Karte an, statt sie still einzurichten: Er prüft, ob
+Graphify vorhanden ist, fragt nach der Installationsart und lässt Git-Hooks
+aus, solange sie nicht ausdrücklich gewünscht sind. Bei Zustimmung legt er
+zuerst die Ausschlüsse an (auch für `SECRETS/` und `USER CONCEPT/`), dann folgt
+der Erstlauf `graphify update .`. Regeln und Befehle stehen unter
+[Karte (Graphify)](Karte-Graphify).
 
 ## Skill-Audit
 

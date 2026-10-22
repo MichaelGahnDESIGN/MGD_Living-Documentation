@@ -30,6 +30,17 @@ Widerspruch haben die projektspezifischen Regeln Vorrang.
 - Vor Pushes und Releases auf Secrets, personenbezogene Daten und sensible
   Infrastrukturdetails prüfen.
 
+## Karte (Graphify), falls eingerichtet
+
+- Strukturfragen zuerst an den Graphen stellen (`graphify query`, `path`,
+  `explain`), erst danach den Quellbaum durchsuchen.
+- Nach jedem abgeschlossenen Teilziel: Todo aktualisieren, Dokumentation
+  anpassen und `graphify update .` ausführen.
+- Architekturaussagen nennen ihren Beleg aus dem Graphen. `graphify-out/` ist
+  abgeleitet und nie Entscheidungs- oder Statusquelle.
+- Hooks, `graphify install --platform claude` und `graphify claude install`
+  nur auf ausdrücklichen Wunsch einrichten.
+
 ## Prüfen und aufräumen
 
 - Erfolg erst nach Test und Gegenprobe am tatsächlichen Ziel behaupten.

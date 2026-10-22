@@ -31,6 +31,8 @@ soll. Die Dokumentation dient Menschen und Agenten als gemeinsame Arbeitsbasis.
 | Team- oder Agentenwechsel | Kurze Übergabe mit Stand, offenen Punkten, Risiken und nächstem Schritt erstellen |
 | Autonomer `$autopilot`-Lauf | Laufvertrag, Grundlinie, Gegenprobe und Abschlussbefund verbindlich dokumentieren |
 | Neues oder bestehendes Projekt einrichten | Projekt-Start-Assistent mit Dashboard, Schutzordnern und Skill-Audit nutzen |
+| Frage zur Struktur („was hängt woran?“) | Zuerst den Graphen fragen (`graphify query`, `path`, `explain`), danach den Quellbaum durchsuchen |
+| Teilziel abgeschlossen | Todo, Dokumentation und `graphify update .` nachziehen |
 
 ## Navigation
 
@@ -41,4 +43,5 @@ soll. Die Dokumentation dient Menschen und Agenten als gemeinsame Arbeitsbasis.
 - [Sicherheit](Sicherheit)
 - [Integration](Integration)
 - [Autopilot-Integration](Autopilot-Integration)
+- [Karte (Graphify)](Karte-Graphify)
 - [Projekt-Start-Assistent](Projekt-Start-Assistent)

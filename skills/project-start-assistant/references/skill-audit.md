@@ -13,6 +13,9 @@ und prüfe, ob sie zu einer konkret dokumentierten Projektaufgabe passen.
 
 ## Regeln
 
+- Graphify ist ein Werkzeug, kein Skill. Führe es im Bericht als eigene Zeile
+  „Werkzeug“ mit dem Status *eingerichtet*, *vorhanden, nicht eingerichtet*
+  oder *nicht vorhanden*. Die Einrichtung erfolgt nur nach Rückfrage.
 - Empfehlungen sind keine Installations- oder Löschfreigabe.
 - Prüfe Lizenz, Kosten, Datenschutz und Wartung, bevor ein neuer externer Skill
   empfohlen wird.

@@ -13,6 +13,7 @@ Wiki-Änderungen im normalen Pull-Request- und Git-Verlauf überprüfbar.
 - [Sicherheit](Sicherheit.md): Schutz- und Veröffentlichungsgrenzen
 - [Integration](Integration.md): Nutzung im Projektalltag
 - [Autopilot-Integration](Autopilot-Integration.md): verbindlicher autonomer Arbeitszyklus
+- [Karte (Graphify)](Karte-Graphify.md): maschinell erzeugte Projektkarte, Ausschlüsse und Arbeitszyklus
 - [Projekt-Start-Assistent](Projekt-Start-Assistent.md): Dashboard, Schutzbereiche und Skill-Audit
 
 ## GitHub-Wiki kontrolliert aktualisieren

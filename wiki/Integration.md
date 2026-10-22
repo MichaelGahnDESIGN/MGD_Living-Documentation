@@ -33,12 +33,31 @@ nach einer Gegenprobe am tatsächlichen Ziel als bestätigter Stand geführt.
 Die vollständige Phasen-Zuordnung und kopierbare Vorlagen stehen unter
 [Autopilot-Integration](Autopilot-Integration).
 
+## Mit Graphify
+
+Graphify liefert die maschinell erzeugte Karte des Projekts. Zyklus: Strukturfragen
+zuerst an den Graphen, nach jedem Teilziel Todo, Dokumentation und
+`graphify update .` nachziehen, Architekturaussagen mit Beleg versehen. Die
+Karte bleibt abgeleitet und ist nie Entscheidungs- oder Statusquelle. Details
+stehen unter [Karte (Graphify)](Karte-Graphify).
+
+## Mit dem MGD-Plattform-Builder
+
+Der [MGD-Plattform-Builder](https://github.com/MichaelGahnDESIGN/MGD-Plattform-Builder)
+installiert ab Version 0.7.0 Living Documentation, Graphify und den Todo-Skill
+gemeinsam in jedem Projekt und verwendet dabei jeweils das neueste Release.
+Ein neues Release dieses Repositories wird deshalb für neue Projekte
+automatisch übernommen; im Builder muss nichts angepasst werden. Vorhandene
+Skill-Ordner überschreibt er nie. Den Installer bildet dieses Repository nicht
+nach.
+
 ## Mit dem Projekt-Start-Assistenten
 
 Für neue oder bestehende Projekte richtet der `project-start-assistant` eine
 lokale `index.html`, globale Agentenregeln, einen Skill-Audit und die geschützten
 Ordner `SECRETS/` sowie `USER CONCEPT/` ein. Die Markdown-Dokumentation bleibt
 dabei die kanonische Quelle; das Dashboard ist ihre verständliche Übersicht.
+Er bietet dabei auch die Karte (Graphify) an, statt sie still einzurichten.
 Details stehen unter [Projekt-Start-Assistent](Projekt-Start-Assistent).
 
 ## Mit externem Wiki

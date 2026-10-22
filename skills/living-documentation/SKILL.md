@@ -1,6 +1,6 @@
 ---
 name: living-documentation
-description: Pflegt eine lebendige, repositorynahe Projektdokumentation mit aktuellem Stand, Entscheidungen, Risiken und offenen Punkten. Verwenden bei Umsetzung, Architekturentscheidungen, Übergaben oder wenn Dokumentation dauerhaft aktuell bleiben soll.
+description: Pflegt eine lebendige, repositorynahe Projektdokumentation mit aktuellem Stand, Entscheidungen, Risiken und offenen Punkten und nutzt Graphify als maschinell erzeugte Karte des Projekts. Verwenden bei Umsetzung, Architekturentscheidungen, Übergaben oder wenn Dokumentation dauerhaft aktuell bleiben soll.
 ---
 
 # Living Documentation
@@ -33,7 +33,8 @@ Vor der ersten relevanten Änderung dokumentiere oder aktualisiere:
 Nach jedem abgeschlossenen Teilziel gehört mindestens ein belegbarer Befund in
 den aktuellen Stand, eine Entscheidung, einen offenen Punkt oder ein Risiko.
 Ein positiver Test allein reicht nicht: Prüfe die Änderung zusätzlich am
-eigentlichen Ziel, bevor sie als bestätigt markiert wird.
+eigentlichen Ziel, bevor sie als bestätigt markiert wird. Existiert eine Karte
+(siehe „Karte (Graphify)“), gehört `graphify update .` zu jedem Teilziel.
 
 Am Ende eines Autopilot-Laufs dokumentiere Ergebnis, tatsächlich ausgeführte
 Prüfungen, verbleibende Grenzen und den nächsten Schritt. Wurde das Ziel nicht
@@ -51,6 +52,8 @@ implizit erledigt. Die genaue Zuordnung der Autopilot-Phasen steht in
 4. Bei einem erkannten Erstlauf in diesem Projekt (siehe unten) zusätzlich den
    Begleit-Skill-Check durchführen, bevor die eigentliche Dokumentationsarbeit
    beginnt.
+5. Existiert `graphify-out/graph.json`, stelle Strukturfragen zuerst an den
+   Graphen (siehe „Karte (Graphify)“), bevor du den Quellbaum durchsuchst.
 
 Passe dich an vorhandene Namen und Strukturen an. Lege keine parallele
 Dokumentationswelt an, wenn das Projekt bereits `docs/`, `DOKUMENTATION/` oder
@@ -64,6 +67,8 @@ Backup, Cleanup, Tests), **Fragenkatalog-Skill** (Design-Fragenkatalog mit
 KI-Antworten), **MGD_Todo_SKILL** (selbst-gehostete `TODO.html`) und dieser
 Skill. Beim allerersten Einsatz in einem Projekt prüft der Agent aktiv, ob die
 anderen drei bereits installiert sind, statt das nur in Prosa zu erwähnen.
+Graphify ist ein Werkzeug und kein Skill; es hat deshalb den eigenen Abschnitt
+„Karte (Graphify)“ weiter unten.
 
 ### Woran „Erstlauf in diesem Projekt" erkannt wird
 
@@ -180,6 +185,77 @@ Dokumentiere nur Informationen, die künftige Arbeit, Betrieb, Sicherheit oder
 Übergaben besser machen. Wiederhole weder offensichtlichen Code noch komplette
 Chatverläufe.
 
+## Karte (Graphify)
+
+[Graphify](https://github.com/Graphify-Labs/graphify) erzeugt aus Code und
+Markdown einen Graphen unter `graphify-out/`. Er ist die maschinell erzeugte
+**Karte** des Projekts: Er zeigt, was existiert und wovon es abhängt. Die
+Dokumentation besitzt den **Stand** (bestätigt, Entscheidung, offen, Risiko),
+die `TODO.html` des Todo-Skills die **Arbeit**. Jede Aussage hat genau einen
+Besitzer; verlinke statt zu kopieren. `graphify update .` arbeitet lokal, ohne
+Sprachmodell und ohne Netzwerk.
+
+Existiert `graphify-out/graph.json` oder hat der Nutzer die Karte eingerichtet,
+gelten diese Regeln im Arbeitszyklus – auch innerhalb eines `$autopilot`-Laufs:
+
+1. **Zuerst den Graphen fragen.** Strukturfragen („was hängt woran?“, „wo wird
+   X benutzt?“, „was ist von Y betroffen?“) beantwortest du zuerst mit
+   `graphify query "<Frage>"`, `graphify path "<A>" "<B>"`,
+   `graphify explain "<Begriff>"` oder `graphify affected "<X>"`. Erst danach
+   durchsuchst du den Quellbaum. Ist der Graph älter als die letzten
+   Änderungen, führe vorher `graphify update .` aus.
+2. **Nach jedem abgeschlossenen Teilziel** in dieser Reihenfolge: Todo
+   aktualisieren (sofern vorhanden), Dokumentation anpassen, dann
+   `graphify update .` ausführen. Bei einer projektlokalen Installation lautet
+   der Befehl `.mgd/graphify-venv/bin/graphify update .`.
+3. **Architekturaussagen nennen ihren Beleg:** Befehl, Datum und Stand, zum
+   Beispiel „`graphify explain "Login"`, 2026-10-22“. Als Beleg zählen nur
+   `EXTRACTED`-Kanten; `INFERRED` und `AMBIGUOUS` sind Vermutungen und werden so
+   gekennzeichnet.
+4. **`graphify-out/` ist nie Entscheidungs- oder Statusquelle.** Der Graph ist
+   abgeleitet: nicht von Hand ändern, nicht als Freigabe oder Testergebnis
+   zitieren. Widerspricht er der Dokumentation, ist das ein Befund und wird als
+   offener Punkt oder Risiko festgehalten.
+5. **Kein Erzwingen.** Weigert sich `graphify update .`, einen kleineren Graphen
+   zu schreiben, klärst du zuerst die Ursache. `--force` existiert für bewusst
+   gelöschten Code; setze es nur ein, wenn der Nutzer zustimmt.
+
+Auf der Einstiegsseite der Dokumentation steht ein Abschnitt „Karte
+(Graphify)“ (Vorlage in der Referenz) mit Verweis auf
+`graphify-out/GRAPH_REPORT.md` und den Befehlen oben.
+
+**Einrichtung nur nach Rückfrage.** Ist Graphify weder installiert noch
+eingerichtet, biete es beim Erstlauf an, nach denselben Regeln wie beim
+Begleit-Skill-Check: konkret fragen, eine Ablehnung respektieren und in
+derselben Sitzung nicht erneut fragen. Installationsart (für alle Projekte oder
+projektlokal in `.mgd/graphify-venv/`), Erstlauf und Marker auf der
+Einstiegsseite stehen in der Referenz.
+
+**Ausschlüsse vor dem ersten Lauf anlegen** (vorhandene Zeilen bleiben
+unverändert):
+
+- `.graphifyignore`: `.claude/`, `.agents/`, `.codex/` und `TODO/` bleiben aus
+  dem Graphen (Agenten-Skills und Aufgabenliste sind nicht das Projekt),
+  ebenso `.mgd/graphify-venv/`, `graphify-out/` sowie `SECRETS/` und
+  `USER CONCEPT/`, sofern sie existieren.
+- `.gitignore`: `graphify-out/cache/`, `.mgd/graphify-venv/`, die datierten
+  Sicherungsordner in `graphify-out/` sowie `graphify-out/.graphify_python` und
+  `graphify-out/.graphify_root`. Die beiden letzten Dateien halten lokale Pfade
+  und werden nie committet. `graph.json` und `GRAPH_REPORT.md` werden
+  versioniert.
+
+**Nur auf ausdrücklichen Wunsch** (jeweils mit Erklärung, nie still):
+`graphify hook install` (Git-Hooks führen nach Commit und Checkout Python im
+Repository-Wurzelordner aus), `graphify install --platform claude` (schreibt
+in die globale `~/.claude/CLAUDE.md`) und `graphify claude install` (ändert
+`CLAUDE.md` und `.claude/settings.json` des Projekts).
+
+Der [MGD-Plattform-Builder](https://github.com/MichaelGahnDESIGN/MGD-Plattform-Builder)
+(ab 0.7.0) installiert diesen Skill, Graphify und den Todo-Skill gemeinsam und
+verwendet jeweils das neueste Release; die Regeln hier sind darauf abgestimmt. Den Installer duplizierst du nicht, du verweist auf
+ihn. Befehle, Vorlagen, Ausschlussblöcke und Grenzen stehen in
+[Karte (Graphify)](references/karte-graphify.md).
+
 ## Beim Aufbau einer neuen Dokumentation
 
 Falls noch keine tragfähige Struktur existiert, erstelle eine schlanke
@@ -201,6 +277,8 @@ Aktualisiere die Dokumentation im selben Änderungsumfang wie die Umsetzung:
   pauschal „funktioniert“.
 - Bereinige veraltete Statusangaben oder markiere sie als historisch, damit die
   Einstiegsseiten aktuell bleiben.
+- Existiert eine Karte, aktualisiere sie im selben Änderungsumfang mit
+  `graphify update .` und nenne bei Strukturaussagen den Beleg.
 
 Für Übergaben sind betroffenes Gebiet, bestätigter Stand, offene Punkte,
 Risiken und der nächste sinnvolle Schritt wichtiger als ein langer Verlauf.
@@ -246,7 +324,9 @@ Niemals in die Projektdokumentation oder ein öffentliches Wiki aufnehmen:
 - personenbezogene Betriebsdaten, private E-Mail-Adressen, interne IP-Adressen
   oder nicht freigegebene Serverpfade;
 - Datenbankexporte, Sicherheitslücken mit ausnutzbaren Details oder Inhalte,
-  deren Veröffentlichung nicht autorisiert ist.
+  deren Veröffentlichung nicht autorisiert ist;
+- lokale Pfade und Maschinenzustand aus `graphify-out/` (insbesondere
+  `.graphify_python` und `.graphify_root`).
 
 Vor einem Wiki-Sync, Push oder einer Veröffentlichung prüfe die betroffenen
 Dokumente gezielt auf solche Inhalte. Eine externe Kopie ist abgeleitet; die

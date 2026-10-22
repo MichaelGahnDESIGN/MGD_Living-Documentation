@@ -9,13 +9,13 @@ Ergebnisse über Sitzungen, Teamwechsel und Kontextgrenzen hinweg.
 | Autopilot-Phase | Dokumentationspflicht |
 | --- | --- |
 | Vertrag vor Start | Ziel, messbare Abschluss- und Abbruchbedingung, Grundlinie, Leitplanken |
-| Beobachten | Tatsächlichen Ausgangszustand statt Erinnerung festhalten |
+| Beobachten | Tatsächlichen Ausgangszustand statt Erinnerung festhalten; Strukturfragen zuerst an den Graphen (`graphify query`, `path`, `explain`), sofern eine Karte existiert |
 | Planen | Teilziel und unabhängiges Akzeptanzkriterium ergänzen |
 | Umsetzen | Keine Erfolgsaussage dokumentieren, solange keine Prüfung vorliegt |
 | Validieren | Test, Build oder Prüfung mit Ergebnis und Grenzen festhalten |
 | Gegenprobe | Am realen Ziel prüfen und Ergebnis vom Werkzeugergebnis unterscheiden |
 | Festschreiben | Commit, Release oder Deployment nur als Tatsache dokumentieren, wenn der Zielstand geprüft ist |
-| Aufschreiben | Entscheidung, Risiko, offener Punkt und Übergabe aktualisieren |
+| Aufschreiben | Entscheidung, Risiko, offener Punkt und Übergabe aktualisieren; Todo nachziehen und `graphify update .` ausführen |
 
 ## Geeignete Einträge
 
@@ -50,3 +50,6 @@ Offen: <nicht geprüfte Grenze oder nächster Schritt>
   nicht eine Lizenz, unbelegt „fertig“ zu melden.
 - Bei einer Abbruchbedingung wird der Lauf sauber beendet und der Grund als
   offener Punkt oder Risiko festgehalten.
+- Die Karte aus Graphify ist abgeleitet. Sie liefert Belege für Strukturaussagen,
+  aber nie ein Testergebnis, eine Entscheidung oder eine Freigabe; Regeln und
+  Grenzen stehen in [Karte (Graphify)](karte-graphify.md).

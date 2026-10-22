@@ -10,12 +10,12 @@ noch offen ist.
 | Autopilot-Phase | Pflicht in der Living Documentation |
 | --- | --- |
 | Vor dem Start | Ziel, Abschlussbedingung, Abbruchbedingung, Grundlinie und Leitplanken festhalten |
-| Beobachten | Den tatsächlichen Ausgangszustand dokumentieren, nicht Erinnerungen oder Annahmen |
+| Beobachten | Den tatsächlichen Ausgangszustand dokumentieren, nicht Erinnerungen oder Annahmen; Strukturfragen zuerst an den Graphen (`graphify query`, `path`, `explain`), sofern eine Karte existiert |
 | Planen | Teilziel und ein unabhängig prüfbares Akzeptanzkriterium ergänzen |
 | Umsetzen | Noch keinen Erfolg behaupten; nur den veränderten Bereich beschreiben |
 | Validieren | Befehl oder Ablauf, Ergebnis und bewusst nicht geprüfte Grenzen festhalten |
 | Gegenprobe | Das reale Nutzer-, Betriebs- oder Spielziel prüfen, nicht nur ein positives Werkzeugergebnis |
-| Abschluss | Ergebnis, offene Grenzen, Risiken und den nächsten sinnvollen Schritt aktualisieren |
+| Abschluss | Ergebnis, offene Grenzen, Risiken und den nächsten sinnvollen Schritt aktualisieren; Todo nachziehen und `graphify update .` ausführen |
 
 ## Laufvertrag vor der Änderung
 
@@ -47,6 +47,9 @@ Offen: <nicht geprüfte Grenze oder nächster Schritt>
 - Fehlt ein aussagekräftiger Test, bleibt das ein offener Punkt oder Risiko.
 - Bei der Abbruchbedingung wird der Lauf ehrlich beendet und der Befund sichtbar
   dokumentiert; ein unvollständiges Ziel wird nie als erledigt dargestellt.
+- Die Karte aus Graphify ist abgeleitet. Sie liefert Belege für
+  Strukturaussagen, aber nie ein Testergebnis, eine Entscheidung oder eine
+  Freigabe. Details stehen unter [Karte (Graphify)](karte-graphify.md).
 
 Die agentenspezifische Regel steht zusätzlich in
 [`skills/living-documentation/SKILL.md`](../skills/living-documentation/SKILL.md).
