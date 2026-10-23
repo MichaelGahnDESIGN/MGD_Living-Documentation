@@ -4,6 +4,20 @@ Dieses Repository folgt einer einfachen, nachvollziehbaren Versionsgeschichte.
 Ein Release wird erst eingetragen, wenn der entsprechende Stand veröffentlicht
 ist.
 
+## Unreleased
+
+### Neu
+
+- Neuer Skill `/wissen`: stimmt TODO, Graphify und Living Documentation ab,
+  ohne eine weitere Dokumentationsablage zu schaffen.
+- Kurze, einheitliche Statuszeichen für erledigte Punkte, offene Arbeit,
+  Fragen, Risiken und Hinweise.
+
+### Dokumentation
+
+- README und Wiki erklären das Zusammenspiel der drei Werkzeuge jetzt in
+  einfacher Sprache für Einsteiger.
+
 ## 0.3.0 – 2026-09-23
 
 - Der frühere `project-start-assistant` ist jetzt ein Kompatibilitätsverweis auf

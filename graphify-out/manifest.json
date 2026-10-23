@@ -1,0 +1,230 @@
+{
+  "scripts/build-release-package.sh": {
+    "mtime": 1792796288.6596527,
+    "seen": 1792796575.054506,
+    "ast_hash": "46ec48f44b8b36936dccf9d361d27d42",
+    "semantic_hash": ""
+  },
+  ".claude/commands/wissen.md": {
+    "mtime": 1792796465.122713,
+    "seen": 1792796575.054508,
+    "ast_hash": "d5cca108166042ed0ff1f4bb68c4d117",
+    "semantic_hash": ""
+  },
+  ".codex/commands/wissen.md": {
+    "mtime": 1792796465.1211414,
+    "seen": 1792796575.054508,
+    "ast_hash": "d5cca108166042ed0ff1f4bb68c4d117",
+    "semantic_hash": ""
+  },
+  "CHANGELOG.md": {
+    "mtime": 1792796512.5107586,
+    "seen": 1792796575.0545092,
+    "ast_hash": "2fa5cad307336da0516ef1e2519fe5ff",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1792796619.9972546,
+    "seen": 1792796670.758927,
+    "ast_hash": "5342421cdba422a05619cefaaa65f4bb",
+    "semantic_hash": ""
+  },
+  "docs/autopilot-integration.md": {
+    "mtime": 1792796288.6583102,
+    "seen": 1792796575.054511,
+    "ast_hash": "5e709b2ba9bc6edf6f2c522bb95db2e6",
+    "semantic_hash": ""
+  },
+  "docs/html-uebersicht.md": {
+    "mtime": 1792796288.6583862,
+    "seen": 1792796575.054512,
+    "ast_hash": "d2564744fd9315ecd50fd9c64b228113",
+    "semantic_hash": ""
+  },
+  "docs/projekt-start-assistent.md": {
+    "mtime": 1792796288.6584673,
+    "seen": 1792796575.054512,
+    "ast_hash": "fdd4d383d3d72444d21a8e9c12311804",
+    "semantic_hash": ""
+  },
+  "docs/setup.md": {
+    "mtime": 1792796619.9977536,
+    "seen": 1792796670.75893,
+    "ast_hash": "481e88cd4ab5693fc6b02f661557413c",
+    "semantic_hash": ""
+  },
+  "docs/wissen.md": {
+    "mtime": 1792796465.1235685,
+    "seen": 1792796575.054514,
+    "ast_hash": "6b50eecfb5599d465153f0f2b0943134",
+    "semantic_hash": ""
+  },
+  "living-documentation/LIVING_DOCUMENTATION.template.html": {
+    "mtime": 1792796288.65931,
+    "seen": 1792796575.054514,
+    "ast_hash": "7cad422fb7ba5a2afdf9ed6b9b015aa1",
+    "semantic_hash": ""
+  },
+  "skills/living-documentation/SKILL.md": {
+    "mtime": 1792796288.6598327,
+    "seen": 1792796575.054515,
+    "ast_hash": "5814118180d4c917cbfd4b8d3be7f55f",
+    "semantic_hash": ""
+  },
+  "skills/living-documentation/agents/openai.yaml": {
+    "mtime": 1792796288.6599412,
+    "seen": 1792796575.054516,
+    "ast_hash": "a1be5b5c5e4bd122efd5c129c6b4f058",
+    "semantic_hash": ""
+  },
+  "skills/living-documentation/references/autopilot-integration.md": {
+    "mtime": 1792796288.6600559,
+    "seen": 1792796575.054517,
+    "ast_hash": "0e40c22fc0636348da4f669ef7f22f7e",
+    "semantic_hash": ""
+  },
+  "skills/living-documentation/references/dokumentationsmodell.md": {
+    "mtime": 1792796288.660131,
+    "seen": 1792796575.054517,
+    "ast_hash": "f1f757a51d8361254ba2e3105c1cc95e",
+    "semantic_hash": ""
+  },
+  "skills/project-start-assistant/SKILL.md": {
+    "mtime": 1792796288.6602685,
+    "seen": 1792796575.054518,
+    "ast_hash": "1e6929184840d07d180a2ae234aefddc",
+    "semantic_hash": ""
+  },
+  "skills/project-start-assistant/agents/openai.yaml": {
+    "mtime": 1792796288.6603775,
+    "seen": 1792796575.054519,
+    "ast_hash": "d55675151a7115cdef002225968bfae1",
+    "semantic_hash": ""
+  },
+  "skills/project-start-assistant/assets/project-dashboard/index.html": {
+    "mtime": 1792796288.6605499,
+    "seen": 1792796575.054519,
+    "ast_hash": "356c304aef6dbb514869741b06eda44f",
+    "semantic_hash": ""
+  },
+  "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md": {
+    "mtime": 1792796288.6607308,
+    "seen": 1792796575.0545201,
+    "ast_hash": "df7b5a6c42cb6d7ad85882b0013af361",
+    "semantic_hash": ""
+  },
+  "skills/project-start-assistant/assets/project-template/USER CONCEPT/README.md": {
+    "mtime": 1792796288.6610398,
+    "seen": 1792796575.054521,
+    "ast_hash": "ca2bafc89eeba4cf43a1ef89f35eb710",
+    "semantic_hash": ""
+  },
+  "skills/project-start-assistant/references/bestandsprojekte.md": {
+    "mtime": 1792796288.661155,
+    "seen": 1792796575.054522,
+    "ast_hash": "9bd51823062a202531091dca1c75d560",
+    "semantic_hash": ""
+  },
+  "skills/project-start-assistant/references/globale-agentenregeln.md": {
+    "mtime": 1792796288.6612275,
+    "seen": 1792796575.054522,
+    "ast_hash": "e9e2aaf3e2375077568aed215d9ebeca",
+    "semantic_hash": ""
+  },
+  "skills/project-start-assistant/references/projektstruktur.md": {
+    "mtime": 1792796288.661294,
+    "seen": 1792796575.054523,
+    "ast_hash": "8a97f9d776958d8cab0628d1fda444f2",
+    "semantic_hash": ""
+  },
+  "skills/project-start-assistant/references/skill-audit.md": {
+    "mtime": 1792796288.6614733,
+    "seen": 1792796575.054524,
+    "ast_hash": "48a8d9794fab56ee8f22a3030778263e",
+    "semantic_hash": ""
+  },
+  "skills/wissen/SKILL.md": {
+    "mtime": 1792796465.120315,
+    "seen": 1792796575.054525,
+    "ast_hash": "2145fe63b7ad25a7677b505415dbf72b",
+    "semantic_hash": ""
+  },
+  "wiki/Arbeitsweise.md": {
+    "mtime": 1792796288.6615906,
+    "seen": 1792796575.054525,
+    "ast_hash": "5371db90d4cee1ab7d79992032da2fd8",
+    "semantic_hash": ""
+  },
+  "wiki/Autopilot-Integration.md": {
+    "mtime": 1792796288.661672,
+    "seen": 1792796575.0545259,
+    "ast_hash": "c794a95d3fb15b042c642f5217f847c9",
+    "semantic_hash": ""
+  },
+  "wiki/Datenformat.md": {
+    "mtime": 1792796288.6617446,
+    "seen": 1792796575.054527,
+    "ast_hash": "fa19dc04ca1217f72d669a416480372d",
+    "semantic_hash": ""
+  },
+  "wiki/Home.md": {
+    "mtime": 1792796512.5100994,
+    "seen": 1792796575.054528,
+    "ast_hash": "a3282a525e260f355b7c02a7631e36ad",
+    "semantic_hash": ""
+  },
+  "wiki/Installation.md": {
+    "mtime": 1792796288.6618853,
+    "seen": 1792796575.054528,
+    "ast_hash": "d54c7c3dca68ddee3b691be2e0f6ccea",
+    "semantic_hash": ""
+  },
+  "wiki/Integration.md": {
+    "mtime": 1792796512.510605,
+    "seen": 1792796575.054529,
+    "ast_hash": "c8c3d49fda7a6f9810074a2322e54c2f",
+    "semantic_hash": ""
+  },
+  "wiki/Interaktive-Uebersicht.md": {
+    "mtime": 1792796288.6620533,
+    "seen": 1792796575.0545301,
+    "ast_hash": "a41380924a7aa2280bc6adf56d737d40",
+    "semantic_hash": ""
+  },
+  "wiki/Projekt-Start-Assistent.md": {
+    "mtime": 1792796288.662131,
+    "seen": 1792796575.0545301,
+    "ast_hash": "cb08b4964f2153a5721f6fc38561d39f",
+    "semantic_hash": ""
+  },
+  "wiki/README.md": {
+    "mtime": 1792796619.9984653,
+    "seen": 1792796670.7589529,
+    "ast_hash": "a14ee40e61f5fd8bf116a0b622327b64",
+    "semantic_hash": ""
+  },
+  "wiki/Sicherheit.md": {
+    "mtime": 1792796288.662271,
+    "seen": 1792796575.054532,
+    "ast_hash": "f1962128e61b0053c847d656c9efa8e0",
+    "semantic_hash": ""
+  },
+  "wiki/Wissen.md": {
+    "mtime": 1792796512.5103288,
+    "seen": 1792796575.054532,
+    "ast_hash": "9c0b8883f8a5c21be5c1fb68c9f59d11",
+    "semantic_hash": ""
+  },
+  "assets/banner.svg": {
+    "mtime": 1792796288.6581037,
+    "seen": 1792796575.054533,
+    "ast_hash": "24392011fbec7e5dd758441d256e61b4",
+    "semantic_hash": ""
+  },
+  "assets/mgd-logo.png": {
+    "mtime": 1792796288.6581888,
+    "seen": 1792796575.054534,
+    "ast_hash": "c2078afbed8ab77aa3e9e0ad01477c8c",
+    "semantic_hash": ""
+  }
+}

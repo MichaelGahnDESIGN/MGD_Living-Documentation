@@ -14,6 +14,7 @@ Wiki-Änderungen im normalen Pull-Request- und Git-Verlauf überprüfbar.
 - [Integration](Integration.md): Nutzung im Projektalltag
 - [Autopilot-Integration](Autopilot-Integration.md): verbindlicher autonomer Arbeitszyklus
 - [Projekt-Start-Assistent](Projekt-Start-Assistent.md): Dashboard, Schutzbereiche und Skill-Audit
+- [Wissen](Wissen.md): TODO, Graphify und Living Documentation zusammen pflegen
 
 ## GitHub-Wiki kontrolliert aktualisieren
 

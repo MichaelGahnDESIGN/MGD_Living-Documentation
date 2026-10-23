@@ -1,0 +1,5 @@
+# Graphify cache is reproducible; the graph and manifest stay versioned.
+graphify-out/cache/
+
+# Lokaler Pakettest; veröffentlichte Release-Artefakte werden separat erstellt.
+dist/
