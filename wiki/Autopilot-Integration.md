@@ -9,12 +9,12 @@ Documentation bewahrt die belegbaren Ergebnisse dauerhaft im Repository.
 | Autopilot-Phase | Dokumentationspflicht |
 | --- | --- |
 | Vertrag vor Start | Ziel, messbare Abschluss- und Abbruchbedingung, Grundlinie, Leitplanken |
-| Beobachten | Tatsächlichen Ausgangszustand statt Erinnerung festhalten |
+| Beobachten | Tatsächlichen Ausgangszustand statt Erinnerung festhalten; Strukturfragen zuerst an den Graphen, sofern eine Karte existiert |
 | Planen | Teilziel und unabhängiges Akzeptanzkriterium ergänzen |
 | Umsetzen | Keine Erfolgsaussage ohne Prüfung dokumentieren |
 | Validieren | Test, Build oder Prüfung mit Ergebnis und Grenzen festhalten |
 | Gegenprobe | Am realen Ziel prüfen und Werkzeugergebnis davon unterscheiden |
-| Abschluss | Ergebnis, Risiken, offene Punkte und nächsten Schritt aktualisieren |
+| Abschluss | Ergebnis, Risiken, offene Punkte und nächsten Schritt aktualisieren; Todo nachziehen und `graphify update .` ausführen |
 
 ## Laufvertrag
 
@@ -46,3 +46,6 @@ Offen: <nicht geprüfte Grenze oder nächster Schritt>
   sichtbar gehalten.
 - Bei einer Abbruchbedingung endet der Lauf ehrlich; das unvollständige Ziel
   wird nicht als erledigt gekennzeichnet.
+- Die Karte aus Graphify liefert Belege für Strukturaussagen, aber nie ein
+  Testergebnis, eine Entscheidung oder eine Freigabe. Siehe
+  [Karte (Graphify)](Karte-Graphify).

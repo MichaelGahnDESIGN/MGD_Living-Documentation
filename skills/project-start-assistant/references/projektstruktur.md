@@ -9,6 +9,8 @@ Projektstrukturen haben Vorrang; ergänze fehlende Elemente statt umzubenennen.
 ├── AGENT_GLOBAL_RULES.md         # gemeinsame Agentenregeln
 ├── README.md                     # Einstieg und Installation
 ├── DOKUMENTATION/                # kanonische Projektdokumentation
+├── .graphifyignore               # nur mit Karte (Graphify): Ausschlüsse
+├── graphify-out/                 # nur mit Karte (Graphify): abgeleitete Projektkarte
 ├── SECRETS/                      # lokal, geschützt, nicht versioniert
 │   ├── README.md                 # Handhabung ohne echte Daten
 │   └── zugangsdaten.template.md  # nur Platzhalter
@@ -30,6 +32,22 @@ Füge fehlende Zeilen hinzu, ohne bestehende Einträge zu verändern:
 /USER CONCEPT/**
 !/USER CONCEPT/README.md
 ```
+
+Wird die Karte (Graphify) eingerichtet, kommen diese Zeilen hinzu. Die lokalen
+Pfaddateien dürfen nie committet werden:
+
+```gitignore
+# Graphify: reproduzierbarer Cache, lokale Pfade und Sicherungen bleiben aus Git
+graphify-out/cache/
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+graphify-out/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/
+.mgd/graphify-venv/
+```
+
+Die `.graphifyignore` hält Agenten-Skills, Aufgabenliste und geschützte Ordner
+aus dem Graphen. Den Block und die Begründung liefert die Referenz
+`karte-graphify.md` des Skills `living-documentation`.
 
 Falls ein Projekt bereits strengere Regeln wie `/SECRETS/` oder
 `/USER CONCEPT/` enthält, behalte sie bei. `.gitignore` verhindert kein

@@ -26,6 +26,15 @@ machen oder Ressourcen blockieren. Hängende eigene Prozesse kontrolliert
 beenden; Ergebnisse anderer Agenten stets durch Diff, Test oder Gegenprobe
 selbst prüfen.
 
+## Karte (Graphify)
+
+Ist die Karte eingerichtet, fragt der Agent Strukturfragen zuerst den Graphen
+(`graphify query`, `graphify path`, `graphify explain`) und führt nach jedem
+abgeschlossenen Teilziel Todo, Dokumentation und `graphify update .` nach.
+Der Graph ist abgeleitet: Er liefert Belege für Architekturaussagen, nie
+Entscheidungen, Status oder Freigaben. Hooks und Eingriffe in die globale oder
+projektweite Agentenkonfiguration erfolgen nur auf ausdrücklichen Wunsch.
+
 ## Project-Clean
 
 Vor einer Bereinigung eine Inventur von Git-Status, Dateien, Backups,

@@ -4,10 +4,29 @@ Dieses Repository folgt einer einfachen, nachvollziehbaren Versionsgeschichte.
 Ein Release wird erst eingetragen, wenn der entsprechende Stand veröffentlicht
 ist.
 
-## Unreleased
+## 0.4.0 – 2026-10-24
 
 ### Neu
 
+- Graphify als **Karte** der Living Documentation. Der Skill
+  `living-documentation` kennt `graphify-out/` als maschinell erzeugte
+  Projektkarte und schreibt den Arbeitszyklus vor: Strukturfragen zuerst an den
+  Graphen (`graphify query`, `path`, `explain`), nach jedem Teilziel Todo,
+  Dokumentation und `graphify update .` nachziehen, Architekturaussagen mit
+  Beleg versehen, `graphify-out/` nie als Entscheidungs- oder Statusquelle
+  verwenden.
+- Neue Referenz `references/karte-graphify.md` sowie `docs/karte-graphify.md`
+  und Wiki-Seite „Karte (Graphify)“ mit Befehlen, Vorlagen und Grenzen.
+- Ausschlussblöcke für `.graphifyignore` (Agenten-Skills, `TODO/`, geschützte
+  Ordner) und `.gitignore` (Cache, datierte Sicherungen, die lokalen
+  Pfaddateien `.graphify_python` und `.graphify_root`, projektlokale
+  Umgebung). Die Projektvorlage des Kompatibilitätsverweises enthält die
+  `.gitignore`-Zeilen und einen Regelabschnitt zur Karte.
+- Der `project-start-assistant` bietet die Karte bei Projektstart und
+  Bestandsübernahme an, statt sie still einzurichten; Graphify erscheint im
+  Skill-Audit als eigene Zeile „Werkzeug“.
+- Git-Hooks, `graphify install --platform claude` (globale `~/.claude/CLAUDE.md`)
+  und `graphify claude install` sind ausdrücklich nur auf Wunsch vorgesehen.
 - Neuer Skill `/wissen`: stimmt TODO, Graphify und Living Documentation ab,
   ohne eine weitere Dokumentationsablage zu schaffen.
 - Kurze, einheitliche Statuszeichen für erledigte Punkte, offene Arbeit,
@@ -15,8 +34,13 @@ ist.
 
 ### Dokumentation
 
+- Die Texte zur Karte (README, `docs/karte-graphify.md`, Wiki) sind in
+  einfacher Sprache für Einsteiger geschrieben.
 - README und Wiki erklären das Zusammenspiel der drei Werkzeuge jetzt in
   einfacher Sprache für Einsteiger.
+- Abgestimmt auf den MGD-Plattform-Builder 0.7.0, der Living Documentation,
+  Graphify und Todo gemeinsam installiert und jeweils das neueste Release
+  verwendet. Am Builder ist für dieses Release nichts zu ändern.
 
 ## 0.3.0 – 2026-09-23
 

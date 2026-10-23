@@ -18,7 +18,10 @@ Der Assistent erstellt oder ergänzt:
 - `USER CONCEPT/` als lokale Sammlung für Ideen und Quellmaterial;
 - `.gitignore`-Regeln, die beide Schutzordner aus dem Repository fernhalten;
 - einen Skill-Audit mit gezielten Empfehlungen statt einer pauschalen
-  Installationsliste.
+  Installationsliste;
+- auf Wunsch die Karte (Graphify): Er fragt, ob sie eingerichtet werden soll,
+  legt zuerst die Ausschlüsse an und nimmt Graphify als eigene Zeile „Werkzeug“
+  in den Audit auf.
 
 Die Vorlagen liegen unter
 [`skills/project-start-assistant/assets/`](../skills/project-start-assistant/assets/).
@@ -74,6 +77,18 @@ empfiehlt Ergänzungen nur bei einer nachweisbaren Lücke und nennt dabei Nutzen
 Quelle sowie mögliche Kosten- oder Datenschutzaspekte. Nicht mehr benötigte
 Skills werden nur als Empfehlung markiert; Installation, Update und Entfernung
 erfolgen ausschließlich nach ausdrücklicher Nutzerentscheidung.
+
+## Karte (Graphify) anbieten
+
+Graphify ist die maschinell erzeugte Karte des Projekts. Der Assistent richtet
+sie nie still ein. Er prüft, ob Graphify vorhanden ist, fragt nach der
+Installationsart (für alle Projekte, nur dieses Projekt oder später) und lässt
+Git-Hooks aus, solange sie nicht ausdrücklich gewünscht sind. Bei Zustimmung
+entstehen zuerst `.graphifyignore` und die `.gitignore`-Zeilen – mit
+`SECRETS/` und `USER CONCEPT/` –, danach der Erstlauf `graphify update .`.
+Regeln und Befehle stehen unter [Karte (Graphify)](karte-graphify.md). Die
+gemeinsame Installation der Begleiter übernimmt der
+[MGD-Plattform-Builder](https://github.com/MichaelGahnDESIGN/MGD-Plattform-Builder).
 
 ## Tägliche Zusammenarbeit
 

@@ -13,6 +13,7 @@ erhalten.
 | Entscheidungen | Datum, Entscheidung, Begründung und Rücknahmebedingung |
 | Offene Punkte | Ungeklärte Fragen, Abhängigkeiten und nächste Schritte |
 | Risiken | Konkrete Risiken mit Auswirkung und Minderung |
+| Karte (Graphify), optional | Abschnitt auf der Einstiegsseite, der auf den maschinell erzeugten Graphen in `graphify-out/` verweist |
 
 Ergänze bei Bedarf Setup, Architektur, Betrieb/Deployment, Sicherheit,
 Lizenzen, Backups oder Versionshinweise. Für ein kleines Projekt genügt häufig
@@ -47,6 +48,24 @@ Geprüft: <Befehl, Test oder manueller Ablauf>
 Ergebnis: <beobachtbares Resultat>
 Nicht geprüft: <Grenze oder ausstehender Bereich>
 ```
+
+## Karte (Graphify)
+
+Die Karte beantwortet „was existiert und wovon hängt es ab?“. Sie ist
+abgeleitet und gehört nicht in die Register oben: Entscheidungen, offene
+Punkte und Risiken bleiben Aussagen der Dokumentation. Eine Architekturaussage
+nennt ihren Beleg aus dem Graphen:
+
+```text
+Aussage: Die Anmeldung ruft die Datenbankverbindung direkt auf.
+Beleg: graphify path "login" "connect", 2026-10-22, Stand abc1234
+Konfidenz: EXTRACTED
+Grenze: ein Pfad belegt eine vorhandene Beziehung, nicht, dass es keine
+        weiteren gibt; dynamisch geladene Module und Konfiguration fehlen.
+```
+
+Vorlage für den Einstiegsabschnitt, Befehle und Ausschlussblöcke stehen in
+[Karte (Graphify)](karte-graphify.md).
 
 ## Externe Kopien
 

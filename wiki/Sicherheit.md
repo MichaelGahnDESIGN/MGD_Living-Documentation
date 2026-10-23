@@ -20,6 +20,19 @@ HTML-Übersicht oder Wiki:
 5. Bei rechtlichen oder datenschutzrelevanten Inhalten fachliche Prüfung
    kennzeichnen statt Sicherheit zu behaupten.
 
+## Graphify-Ausgabe
+
+`graphify-out/` ist abgeleitet und übernimmt Namen und Überschriften aus dem
+Quellbaum. Deshalb gilt vor dem ersten `graphify update .`:
+
+- `SECRETS/` und `USER CONCEPT/` stehen in `.graphifyignore` und `.gitignore`.
+- `graphify-out/.graphify_python` und `graphify-out/.graphify_root` enthalten
+  Pfade von deinem Rechner und werden nie ins Git übernommen. Die Git-Hooks
+  starten das Python-Programm, das in `.graphify_python` steht.
+- Git-Hooks, `graphify install --platform claude` (globale `~/.claude/CLAUDE.md`)
+  und `graphify claude install` (`CLAUDE.md` und `.claude/settings.json` mit
+  absolutem Pfad) gibt es nur auf ausdrücklichen Wunsch.
+
 ## Quellen und Verweise
 
 Ein Link in der Dokumentation darf nicht auf eine Secret-Datei, einen privaten

@@ -44,3 +44,13 @@ konkreten Tool dessen Dokumentation zur Skill-Erkennung.
 
 Ein bestehendes `docs/`, `DOKUMENTATION/` oder `WIKI/` wird weitergeführt. Der
 Skill erstellt nicht ungefragt eine zweite, konkurrierende Dokumentationsablage.
+
+## Optional: Karte (Graphify)
+
+Wer eine maschinell erzeugte Projektkarte möchte, richtet Graphify nach
+Rückfrage ein: `uv tool install graphifyy` für alle Projekte oder eine
+projektlokale Umgebung in `.mgd/graphify-venv/` (Python 3.10 oder neuer). Die
+Schritte und Ausschlüsse stehen unter [Karte (Graphify)](Karte-Graphify).
+Alternativ installiert der
+[MGD-Plattform-Builder](https://github.com/MichaelGahnDESIGN/MGD-Plattform-Builder)
+die Begleiter gemeinsam.

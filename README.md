@@ -46,6 +46,9 @@ für Menschen wie Agenten direkt bearbeitbar.
   Gegenprobe und ehrlicher Abschlussbefund gehören zum Arbeitszyklus
 - Projekt-Start-Assistent für neue und bestehende Projekte: Dashboard,
   Schutzordner, globale Agentenregeln und gezielter Skill-Audit
+- Karte (Graphify): eine automatisch gezeichnete Landkarte deines Projekts,
+  neben der Dokumentation. Mit festen Arbeitsschritten und klaren Regeln,
+  was auf die Karte und was ins Git darf
 - Eine optionale, self-contained HTML-Übersicht: Suche, Filter, Ergänzen,
   Bearbeiten, Entfernen und Export direkt im Browser
 - Keine Datenbank, kein Server, kein CDN, kein Tracking
@@ -56,6 +59,7 @@ für Menschen wie Agenten direkt bearbeitbar.
 skills/living-documentation/
   SKILL.md                                  # Anweisungen für Coding-Agenten
   references/dokumentationsmodell.md        # Struktur und Vorlagen
+  references/karte-graphify.md              # Graphify als Karte: Regeln, Befehle, Ausschlüsse
   agents/openai.yaml                        # Codex-Metadaten
 skills/project-start-assistant/
   SKILL.md                                  # Projektstart und Bestandsmigration
@@ -67,6 +71,7 @@ docs/
   setup.md                                  # Installation und Ersteinrichtung
   html-uebersicht.md                        # Datenformat und Browser-Bedienung
   autopilot-integration.md                  # verbindlicher Dokumentationszyklus
+  karte-graphify.md                         # Graphify als Karte des Projekts
   projekt-start-assistent.md                # Dashboard, Schutzbereiche und Skill-Audit
 wiki/                                       # Quellen für das GitHub-Wiki
 ```
@@ -176,6 +181,65 @@ den nächsten Schritt. Nicht erreichte Ziele bleiben sichtbar als offener Punkt
 oder Risiko. Die vollständige Anleitung mit Vorlagen steht in
 [docs/autopilot-integration.md](docs/autopilot-integration.md).
 
+## Karte (Graphify)
+
+**Kurz gesagt:** Graphify liest dein Projekt und zeichnet eine **Karte**. Auf der
+Karte steht, was es gibt und was woran hängt. Zum Beispiel: „Die Anmeldung
+ruft die Datenbank auf.“ Die Karte liegt im Ordner `graphify-out/`.
+Graphify findest du hier: <https://github.com/Graphify-Labs/graphify>
+
+Die Karte sagt **nicht**, was gilt. Das steht weiter in der Dokumentation.
+Jede Aussage hat genau einen Besitzer:
+
+| Frage | Besitzer |
+| --- | --- |
+| Was ist bestätigt, entschieden, offen oder riskant? | Living Documentation |
+| Was gibt es, und was hängt woran? | Graphify (`graphify-out/`) |
+| Was ist zu tun? | [MGD_Todo_SKILL](https://github.com/MichaelGahnDESIGN/MGD_Todo_SKILL) |
+
+### So arbeitest du damit
+
+Gibt es eine Karte, schreibt der Skill diese vier Regeln vor:
+
+1. **Erst die Karte fragen, dann suchen.** Zum Beispiel
+   `graphify query "Wie funktioniert der Login?"`. Erst danach durchsuchst du
+   die Dateien.
+2. **Teilziel fertig?** Dann in dieser Reihenfolge: Todo-Liste aktualisieren,
+   Dokumentation anpassen, `graphify update .` ausführen. Das frischt die Karte
+   auf.
+3. **Nenne den Beleg.** Schreibe zu jeder Aussage über den Aufbau auf, woher du
+   sie hast: Befehl und Datum.
+4. **Die Karte ist keine Entscheidung und kein Testergebnis.** Du änderst sie
+   nie von Hand.
+
+`graphify update .` arbeitet nur auf deinem Rechner. Es braucht kein
+KI-Modell und kein Internet.
+
+### Was bleibt draußen?
+
+- **Nicht auf die Karte:** die Skill-Ordner deiner Agenten, die Todo-Liste und
+  geschützte Ordner wie `SECRETS/`. Das regelt die Datei `.graphifyignore`.
+- **Nicht ins Git:** der Zwischenspeicher und zwei Dateien mit Pfaden von
+  deinem Rechner (`.graphify_python`, `.graphify_root`). Das regelt die
+  `.gitignore`.
+
+### Nur auf deinen Wunsch
+
+Git-Hooks (kleine Programme, die Git nach jedem Commit startet) und Eingriffe
+in deine globale oder projektweite Agenten-Konfiguration richtet dein Agent
+**nie von selbst** ein. Er fragt dich vorher.
+
+Die ganze Schritt-für-Schritt-Anleitung mit allen Blöcken zum Kopieren steht in
+[docs/karte-graphify.md](docs/karte-graphify.md).
+
+### Zusammenspiel mit dem Plattform-Builder
+
+Der [MGD-Plattform-Builder](https://github.com/MichaelGahnDESIGN/MGD-Plattform-Builder)
+installiert ab Version 0.7.0 in jedem neuen Projekt drei Begleiter auf einmal:
+Living Documentation, Graphify und den Todo-Skill. Er nimmt dabei immer das
+**neueste Release**. Ein neues Release hier kommt also automatisch in jedes
+neue Projekt.
+
 ## Projekt-Start-Assistent – kompatibler Übergang
 
 Der frühere `project-start-assistant` bleibt als kompatibler Verweis für
@@ -223,6 +287,7 @@ aber diese Trennung bewährt:
 | Architektur und Setup | Nur bestätigte technische Abläufe und Grenzen |
 | Offene Punkte | Fehlende Entscheidungen, Abhängigkeiten, nächste Schritte |
 | Risiken | Auswirkung, Minderung und Status |
+| Karte (optional) | Verweis auf den maschinell erzeugten Graphen in `graphify-out/`; abgeleitet, nie Statusquelle |
 | Archiv | Historische Übergaben und alte Entscheidungen – nie einzige Quelle einer geltenden Regel |
 
 Kompakte Vorlagen findest du unter
@@ -283,12 +348,17 @@ Code und ChatGPT Codex, die im selben Projekt oft sinnvoll zusammenspielen:
 > (bei Erstlauf)" in
 > [skills/living-documentation/SKILL.md](skills/living-documentation/SKILL.md).
 
+Graphify ist ein Werkzeug und kein Skill. Es wird getrennt behandelt: Der Skill
+bietet die Karte beim Erstlauf an und richtet sie nur nach Rückfrage ein (siehe
+[Karte (Graphify)](#karte-graphify)).
+
 ## Wiki
 
 Die ausführlichen, versionierten Wiki-Quellen liegen im Ordner [wiki/](wiki/).
 Sie enthalten Einstieg, Installation, Arbeitsweise, HTML-Datenformat,
-Sicherheitsgrenzen und Integrationshinweise. Eine Anleitung zum kontrollierten
-Abgleich mit dem GitHub-Wiki steht in [wiki/README.md](wiki/README.md).
+Sicherheitsgrenzen, Integrationshinweise und die Karte (Graphify). Eine
+Anleitung zum kontrollierten Abgleich mit dem GitHub-Wiki steht in
+[wiki/README.md](wiki/README.md).
 
 ## Änderungen
 

@@ -14,6 +14,31 @@ Er bleibt nur erhalten, damit bestehende Installationen nicht brechen. Er lösch
 verschiebt oder verändert keine bestehende Dokumentation, keine Skills und
 insbesondere keine Inhalte aus `SECRETS/` oder `USER CONCEPT/`.
 
+## Karte (Graphify) anbieten
+
+Bei jedem Projektstart und jeder Übernahme eines Bestandsprojekts – über diesen
+Verweis ebenso wie über den MGD_AI-Projektmanager – bietest du die Karte an,
+statt sie still einzurichten. Graphify ist ein Werkzeug, kein Skill, und liefert
+die maschinell erzeugte Landkarte des Projekts (`graphify-out/`).
+
+1. Prüfe, ob Graphify vorhanden ist (`command -v graphify`,
+   `.mgd/graphify-venv/bin/graphify`, `graphify-out/graph.json`).
+2. Frage konkret: Karte einrichten? Installation für alle Projekte, nur für
+   dieses Projekt oder später? Git-Hooks bleiben aus, außer der Nutzer wünscht
+   sie ausdrücklich.
+3. Bei Zustimmung zuerst die Ausschlüsse anlegen – `.graphifyignore` und
+   `.gitignore`, einschließlich `SECRETS/` und `USER CONCEPT/` –, dann der
+   Erstlauf `graphify update .` und der Marker auf der Einstiegsseite.
+4. Bei Ablehnung: als offenen Punkt festhalten und in derselben Sitzung nicht
+   erneut fragen.
+
+Befehle, Ausschlussblöcke und Grenzen stehen im Skill `living-documentation`,
+Abschnitt „Karte (Graphify)“ und in
+[karte-graphify.md](../living-documentation/references/karte-graphify.md). Die
+gemeinsame Installation von Living Documentation, Graphify und Todo übernimmt
+der [MGD-Plattform-Builder](https://github.com/MichaelGahnDESIGN/MGD-Plattform-Builder);
+dieser Verweis dupliziert sie nicht.
+
 > Die nachstehenden früheren Hinweise sind nur historische Referenz und dürfen
 > nicht mehr als neue Projektzentrale eingerichtet werden.
 

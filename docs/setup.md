@@ -55,12 +55,25 @@ reale Informationen ersetzen. Die Datei lässt sich direkt im Browser öffnen.
 Nach manuellen Änderungen immer exportieren, Diff prüfen und erst dann die
 versionierte Originaldatei ersetzen.
 
+## Karte (Graphify) einrichten (optional)
+
+Graphify liefert die maschinell erzeugte Karte des Projekts. Der Agent richtet
+sie nur nach Rückfrage ein: Installationsart wählen (für alle Projekte oder
+projektlokal in `.mgd/graphify-venv/`), Ausschlüsse in `.graphifyignore` und
+`.gitignore` anlegen, dann `graphify update .` ausführen und den Marker
+„Karte (Graphify) eingerichtet“ auf der Einstiegsseite setzen. Befehle,
+kopierbare Ausschlussblöcke und Grenzen stehen in
+[Karte (Graphify)](karte-graphify.md). Wer die Begleiter in einem Schritt
+installieren möchte, nutzt den
+[MGD-Plattform-Builder](https://github.com/MichaelGahnDESIGN/MGD-Plattform-Builder).
+
 ## Sicherer Update-Ablauf
 
 1. Vor einer Änderung den Git-Status und die aktuelle Dokumentation prüfen.
 2. Quellcode oder Konfiguration umsetzen und angemessen prüfen.
 3. Nur die dadurch betroffenen Dokumentationsaussagen aktualisieren.
 4. Testgrenzen klar lassen: „nicht geprüft“ ist besser als eine Vermutung.
+   Existiert eine Karte, danach `graphify update .` ausführen.
 5. Bei Entfernen oder einer größeren Umstrukturierung eine Sicherung oder einen
    nachvollziehbaren Git-Stand sicherstellen.
 
