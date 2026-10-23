@@ -22,6 +22,14 @@ beantwortet „Warum, in welchem Kontext und nach welchem aktuellen Stand?“. E
 Todo sollte auf die relevante Spezifikation oder Entscheidung verweisen, aber
 die Spezifikation nicht durch einen kurzen Aufgabentext ersetzen.
 
+## Mit `/wissen` und Graphify
+
+`/wissen` koordiniert die Pflege nach einer Änderung: Es aktualisiert die
+betroffenen Todos, prüft bei vorhandener Einrichtung den Graphify-Graphen und
+ergänzt anschließend die Living Documentation. Graphify ist dabei eine
+Strukturkarte; er beweist weder eine funktionierende Funktion noch ein
+Deployment. Für eine kurze Einführung siehe [/wissen](Wissen).
+
 ## Mit Autopilot
 
 Bei einem autonomen `$autopilot`-Lauf ist Living Documentation verbindlicher

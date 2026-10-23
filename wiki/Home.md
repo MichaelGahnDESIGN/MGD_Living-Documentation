@@ -1,5 +1,18 @@
 # MGD Living Documentation
 
+## Schnell verstehen
+
+✅ **Living Documentation** erklärt den belegten Stand eines Projekts.
+
+☑️ **TODO** sagt, was noch gemacht werden muss.
+
+ℹ️ **Graphify** zeigt technische Verbindungen zwischen Dateien und Bereichen.
+
+Mit `/wissen` werden diese drei Dinge nach einer Änderung abgestimmt
+aktualisiert. Es entsteht dabei keine vierte Ablage und es wird nichts
+automatisch veröffentlicht. Die einfache Anleitung steht unter
+[/wissen](Wissen).
+
 MGD Living Documentation hält den überprüfbaren Projektstand dort fest, wo er
 hingehört: versioniert im Repository. Der Skill funktioniert mit ChatGPT Codex,
 Claude Code und anderen Agent-Skills-kompatiblen Tools.

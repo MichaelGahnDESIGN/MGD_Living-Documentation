@@ -78,11 +78,13 @@ wiki/                                       # Quellen für das GitHub-Wiki
 
 ## Installation
 
-Für den vollständigen Ablauf installiere beide Skill-Ordner:
+Für den vollständigen Ablauf installiere diese Skill-Ordner:
 
 - `skills/living-documentation` für die laufende, kanonische Dokumentation;
 - `skills/project-start-assistant` für Projektstart, Migration, Dashboard und
   Skill-Audit.
+- `skills/wissen` für die abgestimmte Pflege von TODO, Graphify und Living
+  Documentation.
 
 ### ChatGPT Codex – global
 
@@ -91,11 +93,12 @@ Kopiere beide Skill-Ordner jeweils nach:
 ```text
 ~/.codex/skills/living-documentation/
 ~/.codex/skills/project-start-assistant/
+~/.codex/skills/wissen/
 ```
 
 Mit dem Codex-Skill-Installer kann das Repository über den Pfad
-`skills/living-documentation` oder `skills/project-start-assistant` installiert
-werden.
+`skills/living-documentation`, `skills/project-start-assistant` oder
+`skills/wissen` installiert werden.
 
 ### Claude Code – projektlokal
 
@@ -130,6 +133,31 @@ Details, Grenzen und ein sicherer Einrichtungsablauf stehen in
 4. Nach jeder relevanten Änderung nur die betroffenen Aussagen aktualisieren.
 5. Den Zustand klar als **bestätigt**, **Entscheidung**, **offen** oder
    **Risiko** kennzeichnen.
+
+## `/wissen` – TODO, Graph und Dokumentation zusammen aktualisieren
+
+Nach einer Änderung hilft `/wissen`, den richtigen Projektstand an den
+richtigen Orten nachzuziehen. Der Ablauf ist bewusst einfach:
+
+1. `/todo` hält konkrete Restarbeit fest.
+2. `/graphify` zeigt die technische Landkarte, falls Graphify im Projekt
+   eingerichtet ist.
+3. Living Documentation hält Entscheidung, Nachweis, Risiko und offene Punkte
+   verständlich fest.
+
+`/wissen` erzeugt keine zweite Aufgabenliste und kopiert nicht automatisch
+Informationen in persönliche Wissensspeicher. Eine kurze Anleitung für den
+Alltag steht in [docs/wissen.md](docs/wissen.md).
+
+Für Antworten, TODOs, READMEs und Wikis gelten diese einfachen Zeichen:
+
+| Zeichen | Bedeutung |
+| --- | --- |
+| ✅ | Erledigt und belegt |
+| ☑️ | Offen oder nächster Schritt |
+| ❓ | Frage, die Michael beantworten muss |
+| ⚠️ | Wichtiger Hinweis, Risiko oder Grenze |
+| ℹ️ | Zusätzliche Information |
 
 Beispiel für eine belastbare Verifikation:
 
@@ -310,6 +338,7 @@ Code und ChatGPT Codex, die im selben Projekt oft sinnvoll zusammenspielen:
 | MGD_DEV_SKILL | [MichaelGahnDESIGN/MGD_DEV_SKILL](https://github.com/MichaelGahnDESIGN/MGD_DEV_SKILL) | Gleicht vor jedem Release den dokumentierten Stand mit dem tatsächlichen Projektstand ab und hält Sync-, Backup- und Testabläufe fest. |
 | Fragenkatalog-Skill | [MichaelGahnDESIGN/Fragenkatalog-Skill](https://github.com/MichaelGahnDESIGN/Fragenkatalog-Skill) | Unbeantwortete Design-Fragen aus dem interaktiven Fragenkatalog fließen als offene Punkte in die Living Documentation ein. |
 | MGD_Todo_SKILL | [MichaelGahnDESIGN/MGD_Todo_SKILL](https://github.com/MichaelGahnDESIGN/MGD_Todo_SKILL) | Todos in der selbst-gehosteten `TODO.html` lassen sich auf Dokumentations-Abschnitte verlinken. |
+| `/wissen` | Dieser Skill | Aktualisiert die drei Orte abgestimmt, ohne ihren Zweck zu vermischen. |
 
 > [!NOTE]
 > Beim allerersten Einsatz von Living Documentation in einem Projekt prüft der

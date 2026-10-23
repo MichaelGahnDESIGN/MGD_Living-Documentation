@@ -19,6 +19,11 @@ verwendet wird.
 | Claude Code, nur ein Projekt | `.claude/skills/living-documentation/` |
 | universelles Agent-Skills-Format | `.agents/skills/living-documentation/` |
 
+Für den kombinierten Ablauf installiere zusätzlich `skills/wissen` in den
+entsprechenden Skill-Ordner. Dieser Skill aktualisiert keine zweite
+Dokumentation, sondern verbindet eine vorhandene TODO-Datei, Graphify und die
+Living Documentation.
+
 ## Bestehendes Projekt anschließen
 
 1. Vorhandene Anweisungen und Dokumentationsordner lesen.

@@ -1,0 +1,4269 @@
+{
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "nodes": [
+    {
+      "id": "scripts_build_release_package",
+      "label": "build-release-package.sh",
+      "file_type": "code",
+      "source_file": "scripts/build-release-package.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_build_release_package_sh__entry",
+      "label": "build-release-package.sh script",
+      "file_type": "code",
+      "source_file": "scripts/build-release-package.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "claude_commands_wissen",
+      "label": ".claude/commands/wissen.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": ".claude/commands/wissen.md",
+      "source_location": "L1",
+      "frontmatter": {
+        "description": "Aktualisiert TODO, Graphify und Living Documentation eines Projekts abgestimmt."
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "codex_commands_wissen",
+      "label": ".codex/commands/wissen.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": ".codex/commands/wissen.md",
+      "source_location": "L1",
+      "frontmatter": {
+        "description": "Aktualisiert TODO, Graphify und Living Documentation eines Projekts abgestimmt."
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog",
+      "label": "CHANGELOG.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_änderungsverlauf",
+      "label": "Änderungsverlauf",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_unreleased",
+      "label": "Unreleased",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_neu",
+      "label": "Neu",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_dokumentation",
+      "label": "Dokumentation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_0_3_0_2026_09_23",
+      "label": "0.3.0 – 2026-09-23",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_0_2_1_2026_09_23",
+      "label": "0.2.1 – 2026-09-23",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_0_2_0_2026_09_23",
+      "label": "0.2.0 – 2026-09-23",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_0_1_0_2026_09_23",
+      "label": "0.1.0 – 2026-09-23",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme",
+      "label": "README.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_mgd_living_documentation",
+      "label": "MGD Living Documentation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_das_problem",
+      "label": "Das Problem",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_funktionen",
+      "label": "Funktionen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_enthaltene_dateien",
+      "label": "Enthaltene Dateien",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L53",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_installation",
+      "label": "Installation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L74",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_chatgpt_codex_global",
+      "label": "ChatGPT Codex – global",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L84",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_claude_code_projektlokal",
+      "label": "Claude Code – projektlokal",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L98",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_weitere_agent_skills_kompatible_tools",
+      "label": "Weitere Agent-Skills-kompatible Tools",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L108",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_schnellstart",
+      "label": "Schnellstart",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L121",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_wissen_todo_graph_und_dokumentation_zusammen_aktualisieren",
+      "label": "`/wissen` – TODO, Graph und Dokumentation zusammen aktualisieren",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L132",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_verbindliche_autopilot_integration",
+      "label": "Verbindliche Autopilot-Integration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L165",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_projekt_start_assistent_kompatibler_übergang",
+      "label": "Projekt-Start-Assistent – kompatibler Übergang",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L179",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_interaktive_living_documentation",
+      "label": "Interaktive Living Documentation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L191",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_dokumentationsmodell",
+      "label": "Dokumentationsmodell",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L214",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_zusammenarbeit_von_menschen_und_agenten",
+      "label": "Zusammenarbeit von Menschen und Agenten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L231",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_sicherheits_und_veröffentlichungsregeln",
+      "label": "Sicherheits- und Veröffentlichungsregeln",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L241",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_grenzen",
+      "label": "Grenzen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L258",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_empfohlene_begleit_skills",
+      "label": "Empfohlene Begleit-Skills",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L266",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_wiki",
+      "label": "Wiki",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L286",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_änderungen",
+      "label": "Änderungen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L293",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_release_paket_erzeugen",
+      "label": "Release-Paket erzeugen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L298",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_lizenz",
+      "label": "Lizenz",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L310",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_lizenz_318",
+      "label": "Lizenz",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L318",
+      "_origin": "ast"
+    },
+    {
+      "id": "readme_impressum",
+      "label": "Impressum",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "README.md",
+      "source_location": "L322",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_autopilot_integration",
+      "label": "docs/autopilot-integration.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_autopilot_integration_verbindliche_autopilot_integration",
+      "label": "Verbindliche Autopilot-Integration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_autopilot_integration_verbindlicher_ablauf",
+      "label": "Verbindlicher Ablauf",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_autopilot_integration_laufvertrag_vor_der_änderung",
+      "label": "Laufvertrag vor der Änderung",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_autopilot_integration_befund_nach_einem_teilziel",
+      "label": "Befund nach einem Teilziel",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_autopilot_integration_wichtige_grenzen",
+      "label": "Wichtige Grenzen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_html_uebersicht",
+      "label": "html-uebersicht.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "docs/html-uebersicht.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_html_uebersicht_interaktive_html_übersicht",
+      "label": "Interaktive HTML-Übersicht",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/html-uebersicht.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_html_uebersicht_datenformat",
+      "label": "Datenformat",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/html-uebersicht.md",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_html_uebersicht_statuswerte",
+      "label": "Statuswerte",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/html-uebersicht.md",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_html_uebersicht_manuelle_bearbeitung_im_browser",
+      "label": "Manuelle Bearbeitung im Browser",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/html-uebersicht.md",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_html_uebersicht_bearbeitung_durch_agenten",
+      "label": "Bearbeitung durch Agenten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/html-uebersicht.md",
+      "source_location": "L55",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_projekt_start_assistent",
+      "label": "projekt-start-assistent.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_projekt_start_assistent_projekt_start_assistent",
+      "label": "Projekt-Start-Assistent",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_projekt_start_assistent_ergebnis_in_einem_neuen_projekt",
+      "label": "Ergebnis in einem neuen Projekt",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_projekt_start_assistent_dashboard_in_codex_claude_und_anderen_tools",
+      "label": "Dashboard in Codex, Claude und anderen Tools",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_projekt_start_assistent_schutzbereiche",
+      "label": "Schutzbereiche",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_projekt_start_assistent_bestehende_projekte",
+      "label": "Bestehende Projekte",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L58",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_projekt_start_assistent_skill_audit",
+      "label": "Skill-Audit",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L70",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_projekt_start_assistent_tägliche_zusammenarbeit",
+      "label": "Tägliche Zusammenarbeit",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L78",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_setup",
+      "label": "setup.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "docs/setup.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_setup_setup_und_ersteinrichtung",
+      "label": "Setup und Ersteinrichtung",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/setup.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_setup_voraussetzungen",
+      "label": "Voraussetzungen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/setup.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_setup_skill_installieren",
+      "label": "Skill installieren",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/setup.md",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_setup_bestehendes_projekt_anschliessen",
+      "label": "Bestehendes Projekt anschließen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/setup.md",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_setup_neues_projekt_einrichten",
+      "label": "Neues Projekt einrichten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/setup.md",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_setup_interaktive_html_übersicht_einrichten",
+      "label": "Interaktive HTML-Übersicht einrichten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/setup.md",
+      "source_location": "L45",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_setup_sicherer_update_ablauf",
+      "label": "Sicherer Update-Ablauf",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/setup.md",
+      "source_location": "L58",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_setup_autopilot_verbindlich_verwenden",
+      "label": "Autopilot verbindlich verwenden",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/setup.md",
+      "source_location": "L67",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_wissen",
+      "label": "docs/wissen.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "docs/wissen.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_wissen_wissen_alles_wichtige_an_einem_projektstand_pflegen",
+      "label": "/wissen – alles Wichtige an einem Projektstand pflegen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/wissen.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_wissen_was_passiert_dabei",
+      "label": "Was passiert dabei?",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/wissen.md",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_wissen_einfacher_ablauf",
+      "label": "Einfacher Ablauf",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/wissen.md",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_wissen_statuszeichen",
+      "label": "Statuszeichen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/wissen.md",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "docs_wissen_wichtige_grenze",
+      "label": "Wichtige Grenze",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "docs/wissen.md",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill",
+      "label": "living-documentation/SKILL.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L1",
+      "frontmatter": {
+        "name": "living-documentation",
+        "description": "Pflegt eine lebendige, repositorynahe Projektdokumentation mit aktuellem Stand, Entscheidungen, Risiken und offenen Punkten. Verwenden bei Umsetzung, Architekturentscheidungen, Übergaben oder wenn Dokumentation dauerhaft aktuell bleiben soll."
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_living_documentation",
+      "label": "Living Documentation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_verbindliche_autopilot_integration",
+      "label": "Verbindliche Autopilot-Integration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_zuerst_einordnen",
+      "label": "Zuerst einordnen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_begleit_skill_check_bei_erstlauf",
+      "label": "Begleit-Skill-Check (bei Erstlauf)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L59",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_woran_erstlauf_in_diesem_projekt_erkannt_wird",
+      "label": "Woran „Erstlauf in diesem Projekt\" erkannt wird",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L68",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_1_prüfen_was_bereits_installiert_ist",
+      "label": "1. Prüfen, was bereits installiert ist",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L86",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_2_bei_fehlenden_skills_aktiv_nachfragen",
+      "label": "2. Bei fehlenden Skills aktiv nachfragen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L101",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_3_ergebnis_dokumentieren",
+      "label": "3. Ergebnis dokumentieren",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L153",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_was_festgehalten_wird",
+      "label": "Was festgehalten wird",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L167",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_beim_aufbau_einer_neuen_dokumentation",
+      "label": "Beim Aufbau einer neuen Dokumentation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L183",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_bei_änderungen_am_projekt",
+      "label": "Bei Änderungen am Projekt",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L193",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_interaktive_living_documentation",
+      "label": "Interaktive Living Documentation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L208",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_sicherheits_und_veröffentlichungsgrenzen",
+      "label": "Sicherheits- und Veröffentlichungsgrenzen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L240",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_skill_qualitätsmassstab",
+      "label": "Qualitätsmaßstab",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L255",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_autopilot_integration",
+      "label": "references/autopilot-integration.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_autopilot_integration_autopilot_integration",
+      "label": "Autopilot-Integration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_autopilot_integration_verbindliche_zuordnung",
+      "label": "Verbindliche Zuordnung",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_autopilot_integration_geeignete_einträge",
+      "label": "Geeignete Einträge",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_autopilot_integration_laufvertrag",
+      "label": "Laufvertrag",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_autopilot_integration_teilziel_abgeschlossen",
+      "label": "Teilziel abgeschlossen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_autopilot_integration_grenzen",
+      "label": "Grenzen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L43",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_dokumentationsmodell",
+      "label": "dokumentationsmodell.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_dokumentationsmodell_dokumentationsmodell",
+      "label": "Dokumentationsmodell",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_dokumentationsmodell_sinnvoller_minimalumfang",
+      "label": "Sinnvoller Minimalumfang",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_dokumentationsmodell_vorlagen",
+      "label": "Vorlagen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_dokumentationsmodell_entscheidung",
+      "label": "Entscheidung",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_dokumentationsmodell_offener_punkt",
+      "label": "Offener Punkt",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_dokumentationsmodell_risiko",
+      "label": "Risiko",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L35",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_dokumentationsmodell_verifikation",
+      "label": "Verifikation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_living_documentation_references_dokumentationsmodell_externe_kopien",
+      "label": "Externe Kopien",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L51",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_skill",
+      "label": "project-start-assistant/SKILL.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L1",
+      "frontmatter": {
+        "name": "project-start-assistant",
+        "description": "Kompatibilitätsverweis für bestehende Installationen. Für Projektstart, Migration, Dashboard und Skill-Audit den MGD_AI-Projektmanager verwenden."
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_skill_kompatibilitätsverweis_projekt_start_assistent",
+      "label": "Kompatibilitätsverweis: Projekt-Start-Assistent",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_skill_modus_wählen",
+      "label": "Modus wählen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_skill_unverhandelbare_schutzbereiche",
+      "label": "Unverhandelbare Schutzbereiche",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L43",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_skill_globale_arbeitsregeln_im_projekt",
+      "label": "Globale Arbeitsregeln im Projekt",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L65",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_skill_dashboard_und_verständliche_einführung",
+      "label": "Dashboard und verständliche Einführung",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L91",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_skill_skill_audit_und_empfehlungen",
+      "label": "Skill-Audit und Empfehlungen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L117",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_skill_abschluss_eines_projektstarts",
+      "label": "Abschluss eines Projektstarts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L135",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_assets_project_template_agent_global_rules_template",
+      "label": "AGENT_GLOBAL_RULES.template.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_globale_agentenregeln",
+      "label": "Globale Agentenregeln",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_verständlich_und_sparsam_arbeiten",
+      "label": "Verständlich und sparsam arbeiten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_agenten_und_prozesse_steuern",
+      "label": "Agenten und Prozesse steuern",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_schützen_statt_raten",
+      "label": "Schützen statt raten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_prüfen_und_aufräumen",
+      "label": "Prüfen und aufräumen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_assets_project_template_user_concept_readme",
+      "label": "USER CONCEPT/README.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/project-start-assistant/assets/project-template/USER CONCEPT/README.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_assets_project_template_user_concept_readme_user_concept",
+      "label": "USER CONCEPT",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/assets/project-template/USER CONCEPT/README.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_bestandsprojekte",
+      "label": "bestandsprojekte.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/project-start-assistant/references/bestandsprojekte.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_bestandsprojekte_bestehende_projekte_sicher_übernehmen",
+      "label": "Bestehende Projekte sicher übernehmen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/bestandsprojekte.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_bestandsprojekte_reihenfolge",
+      "label": "Reihenfolge",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/bestandsprojekte.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_bestandsprojekte_nie_automatisch_tun",
+      "label": "Nie automatisch tun",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/bestandsprojekte.md",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_bestandsprojekte_erfolgskriterien",
+      "label": "Erfolgskriterien",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/bestandsprojekte.md",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_globale_agentenregeln",
+      "label": "globale-agentenregeln.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/project-start-assistant/references/globale-agentenregeln.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_globale_agentenregeln_globale_agentenregeln",
+      "label": "Globale Agentenregeln",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/globale-agentenregeln.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_globale_agentenregeln_modell_und_limits",
+      "label": "Modell und Limits",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/globale-agentenregeln.md",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_globale_agentenregeln_agentenpool_und_prozesskontrolle",
+      "label": "Agentenpool und Prozesskontrolle",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/globale-agentenregeln.md",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_globale_agentenregeln_project_clean",
+      "label": "Project-Clean",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/globale-agentenregeln.md",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_projektstruktur",
+      "label": "projektstruktur.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/project-start-assistant/references/projektstruktur.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_projektstruktur_projektstruktur_und_vorlagen",
+      "label": "Projektstruktur und Vorlagen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/projektstruktur.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_projektstruktur_gitignore_ergänzen",
+      "label": "`.gitignore` ergänzen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/projektstruktur.md",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_projektstruktur_secrets_readme_md",
+      "label": "`SECRETS/README.md`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/projektstruktur.md",
+      "source_location": "L39",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_projektstruktur_secrets_zugangsdaten_template_md",
+      "label": "`SECRETS/zugangsdaten.template.md`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/projektstruktur.md",
+      "source_location": "L54",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_projektstruktur_user_concept_readme_md",
+      "label": "`USER CONCEPT/README.md`",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/projektstruktur.md",
+      "source_location": "L69",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_skill_audit",
+      "label": "skill-audit.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/project-start-assistant/references/skill-audit.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_skill_audit_skill_audit",
+      "label": "Skill-Audit",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/skill-audit.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_skill_audit_berichtsvorlage",
+      "label": "Berichtsvorlage",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/skill-audit.md",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_project_start_assistant_references_skill_audit_regeln",
+      "label": "Regeln",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/project-start-assistant/references/skill-audit.md",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_wissen_skill",
+      "label": "wissen/SKILL.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L1",
+      "frontmatter": {
+        "name": "wissen",
+        "description": "&gt;-"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_wissen_skill_wissen_projektwissen_aktualisieren",
+      "label": "/wissen – Projektwissen aktualisieren",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_wissen_skill_die_drei_orte_haben_verschiedene_aufgaben",
+      "label": "Die drei Orte haben verschiedene Aufgaben",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_wissen_skill_ablauf",
+      "label": "Ablauf",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_wissen_skill_einheitliche_statuszeichen",
+      "label": "Einheitliche Statuszeichen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L57",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_wissen_skill_sicherheitsgrenzen",
+      "label": "Sicherheitsgrenzen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L73",
+      "_origin": "ast"
+    },
+    {
+      "id": "skills_wissen_skill_abschlussformat",
+      "label": "Abschlussformat",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L82",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_arbeitsweise",
+      "label": "Arbeitsweise.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "wiki/Arbeitsweise.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_arbeitsweise_arbeitsweise",
+      "label": "Arbeitsweise",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Arbeitsweise.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_arbeitsweise_die_fünf_informationsarten",
+      "label": "Die fünf Informationsarten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Arbeitsweise.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_arbeitsweise_aktualisieren_nach_einer_änderung",
+      "label": "Aktualisieren nach einer Änderung",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Arbeitsweise.md",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_arbeitsweise_entscheidungsvorlage",
+      "label": "Entscheidungsvorlage",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Arbeitsweise.md",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_arbeitsweise_gute_übergabe",
+      "label": "Gute Übergabe",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Arbeitsweise.md",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_autopilot_integration",
+      "label": "Autopilot-Integration.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "wiki/Autopilot-Integration.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_autopilot_integration_autopilot_integration",
+      "label": "Autopilot-Integration",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Autopilot-Integration.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_autopilot_integration_verbindliche_zuordnung",
+      "label": "Verbindliche Zuordnung",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Autopilot-Integration.md",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_autopilot_integration_laufvertrag",
+      "label": "Laufvertrag",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Autopilot-Integration.md",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_autopilot_integration_teilziel_dokumentieren",
+      "label": "Teilziel dokumentieren",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Autopilot-Integration.md",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_autopilot_integration_grenzen",
+      "label": "Grenzen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Autopilot-Integration.md",
+      "source_location": "L40",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_datenformat",
+      "label": "Datenformat.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "wiki/Datenformat.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_datenformat_datenformat",
+      "label": "Datenformat",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Datenformat.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_datenformat_eintrag",
+      "label": "Eintrag",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Datenformat.md",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_datenformat_regeln",
+      "label": "Regeln",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Datenformat.md",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_datenformat_bearbeitung_durch_agenten",
+      "label": "Bearbeitung durch Agenten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Datenformat.md",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_home",
+      "label": "Home.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "wiki/Home.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_home_mgd_living_documentation",
+      "label": "MGD Living Documentation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Home.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_home_schnell_verstehen",
+      "label": "Schnell verstehen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Home.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_home_wofür",
+      "label": "Wofür?",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Home.md",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_home_leitprinzipien",
+      "label": "Leitprinzipien",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Home.md",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_home_schnellreferenz",
+      "label": "Schnellreferenz",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Home.md",
+      "source_location": "L36",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_home_navigation",
+      "label": "Navigation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Home.md",
+      "source_location": "L48",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_installation",
+      "label": "Installation.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_installation_installation",
+      "label": "Installation",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_installation_voraussetzungen",
+      "label": "Voraussetzungen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_installation_chatgpt_codex",
+      "label": "ChatGPT Codex",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_installation_claude_code",
+      "label": "Claude Code",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_installation_andere_agenten",
+      "label": "Andere Agenten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_installation_erstes_projekt_anschliessen",
+      "label": "Erstes Projekt anschließen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration",
+      "label": "Integration.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_integration_in_den_projektalltag",
+      "label": "Integration in den Projektalltag",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_mit_git",
+      "label": "Mit Git",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_mit_tests_und_releases",
+      "label": "Mit Tests und Releases",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_mit_aufgabenlisten",
+      "label": "Mit Aufgabenlisten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_mit_wissen_und_graphify",
+      "label": "Mit `/wissen` und Graphify",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_mit_autopilot",
+      "label": "Mit Autopilot",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_mit_dem_projekt_start_assistenten",
+      "label": "Mit dem Projekt-Start-Assistenten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_mit_externem_wiki",
+      "label": "Mit externem Wiki",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L52",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_mit_den_anderen_mgd_skills",
+      "label": "Mit den anderen MGD-Skills",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L58",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_mgd_dev_skill",
+      "label": "MGD_DEV_SKILL",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_fragenkatalog_skill",
+      "label": "Fragenkatalog-Skill",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L83",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_integration_mgd_todo_skill",
+      "label": "MGD_Todo_SKILL",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L99",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_interaktive_uebersicht",
+      "label": "Interaktive-Uebersicht.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "wiki/Interaktive-Uebersicht.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_interaktive_uebersicht_interaktive_übersicht",
+      "label": "Interaktive Übersicht",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Interaktive-Uebersicht.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_interaktive_uebersicht_bedienung",
+      "label": "Bedienung",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Interaktive-Uebersicht.md",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_interaktive_uebersicht_dauerhaft_speichern",
+      "label": "Dauerhaft speichern",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Interaktive-Uebersicht.md",
+      "source_location": "L20",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_interaktive_uebersicht_entfernen_oder_archivieren",
+      "label": "Entfernen oder archivieren?",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Interaktive-Uebersicht.md",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_interaktive_uebersicht_mehrbenutzergrenze",
+      "label": "Mehrbenutzergrenze",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Interaktive-Uebersicht.md",
+      "source_location": "L39",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_projekt_start_assistent",
+      "label": "Projekt-Start-Assistent.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_projekt_start_assistent_projekt_start_assistent_kompatibilitätsverweis",
+      "label": "Projekt-Start-Assistent – Kompatibilitätsverweis",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_projekt_start_assistent_was_entsteht",
+      "label": "Was entsteht?",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_projekt_start_assistent_dashboard_überall_nutzen",
+      "label": "Dashboard überall nutzen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_projekt_start_assistent_schutzbereiche",
+      "label": "Schutzbereiche",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L29",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_projekt_start_assistent_bestehende_projekte",
+      "label": "Bestehende Projekte",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L43",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_projekt_start_assistent_skill_audit",
+      "label": "Skill-Audit",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L50",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_readme",
+      "label": "wiki/README.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "wiki/README.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_readme_wiki_quellen",
+      "label": "Wiki-Quellen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/README.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_readme_seiten",
+      "label": "Seiten",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/README.md",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_readme_github_wiki_kontrolliert_aktualisieren",
+      "label": "GitHub-Wiki kontrolliert aktualisieren",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/README.md",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_sicherheit",
+      "label": "Sicherheit.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "wiki/Sicherheit.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_sicherheit_sicherheit_und_veröffentlichung",
+      "label": "Sicherheit und Veröffentlichung",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Sicherheit.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_sicherheit_vor_dem_push_oder_wiki_sync",
+      "label": "Vor dem Push oder Wiki-Sync",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Sicherheit.md",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_sicherheit_quellen_und_verweise",
+      "label": "Quellen und Verweise",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Sicherheit.md",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_wissen",
+      "label": "Wissen.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "wiki/Wissen.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_wissen_wissen",
+      "label": "/wissen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Wissen.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "wiki_wissen_die_statuszeichen",
+      "label": "Die Statuszeichen",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "wiki/Wissen.md",
+      "source_location": "L13",
+      "_origin": "ast"
+    }
+  ],
+  "links": [
+    {
+      "source": "scripts_build_release_package",
+      "target": "scripts_build_release_package_sh__entry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/build-release-package.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog",
+      "target": "changelog_änderungsverlauf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_änderungsverlauf",
+      "target": "changelog_unreleased",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_unreleased",
+      "target": "changelog_neu",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_unreleased",
+      "target": "changelog_dokumentation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_änderungsverlauf",
+      "target": "changelog_0_3_0_2026_09_23",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_änderungsverlauf",
+      "target": "changelog_0_2_1_2026_09_23",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_änderungsverlauf",
+      "target": "changelog_0_2_0_2026_09_23",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_änderungsverlauf",
+      "target": "changelog_0_1_0_2026_09_23",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "readme_mgd_living_documentation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_das_problem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_funktionen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_enthaltene_dateien",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_installation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_installation",
+      "target": "readme_chatgpt_codex_global",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_installation",
+      "target": "readme_claude_code_projektlokal",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_installation",
+      "target": "readme_weitere_agent_skills_kompatible_tools",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "docs_setup",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_schnellstart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_wissen_todo_graph_und_dokumentation_zusammen_aktualisieren",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "docs_wissen",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_verbindliche_autopilot_integration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "docs_autopilot_integration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L177",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_projekt_start_assistent_kompatibler_übergang",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_interaktive_living_documentation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L191",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "docs_html_uebersicht",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L212",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_dokumentationsmodell",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L214",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "skills_living_documentation_references_dokumentationsmodell",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L229",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_zusammenarbeit_von_menschen_und_agenten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L231",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_sicherheits_und_veröffentlichungsregeln",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L241",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_grenzen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L258",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_empfohlene_begleit_skills",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L266",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "skills_living_documentation_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L284",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_wiki",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L286",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "users_michaelgahn_documents_codex_2026_10_23_ki_kontext_f_r_michael_gahn_work_mgd_living_documentation_wiki_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L288",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "wiki_readme",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L291",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_änderungen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L293",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "changelog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L296",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_release_paket_erzeugen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_lizenz",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L310",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme",
+      "target": "users_michaelgahn_documents_codex_2026_10_23_ki_kontext_f_r_michael_gahn_work_mgd_living_documentation_license_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L313",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_lizenz_318",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L318",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "readme_mgd_living_documentation",
+      "target": "readme_impressum",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L322",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_autopilot_integration",
+      "target": "docs_autopilot_integration_verbindliche_autopilot_integration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_autopilot_integration_verbindliche_autopilot_integration",
+      "target": "docs_autopilot_integration_verbindlicher_ablauf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_autopilot_integration_verbindliche_autopilot_integration",
+      "target": "docs_autopilot_integration_laufvertrag_vor_der_änderung",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_autopilot_integration_verbindliche_autopilot_integration",
+      "target": "docs_autopilot_integration_befund_nach_einem_teilziel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_autopilot_integration_verbindliche_autopilot_integration",
+      "target": "docs_autopilot_integration_wichtige_grenzen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_autopilot_integration",
+      "target": "skills_living_documentation_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/autopilot-integration.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_html_uebersicht",
+      "target": "docs_html_uebersicht_interaktive_html_übersicht",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/html-uebersicht.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_html_uebersicht_interaktive_html_übersicht",
+      "target": "docs_html_uebersicht_datenformat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/html-uebersicht.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_html_uebersicht_interaktive_html_übersicht",
+      "target": "docs_html_uebersicht_statuswerte",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/html-uebersicht.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_html_uebersicht_interaktive_html_übersicht",
+      "target": "docs_html_uebersicht_manuelle_bearbeitung_im_browser",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/html-uebersicht.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_html_uebersicht_interaktive_html_übersicht",
+      "target": "docs_html_uebersicht_bearbeitung_durch_agenten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/html-uebersicht.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_projekt_start_assistent",
+      "target": "docs_projekt_start_assistent_projekt_start_assistent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_projekt_start_assistent_projekt_start_assistent",
+      "target": "docs_projekt_start_assistent_ergebnis_in_einem_neuen_projekt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_projekt_start_assistent",
+      "target": "users_michaelgahn_documents_codex_2026_10_23_ki_kontext_f_r_michael_gahn_work_mgd_living_documentation_skills_project_start_assistant_assets_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_projekt_start_assistent_projekt_start_assistent",
+      "target": "docs_projekt_start_assistent_dashboard_in_codex_claude_und_anderen_tools",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_projekt_start_assistent_projekt_start_assistent",
+      "target": "docs_projekt_start_assistent_schutzbereiche",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_projekt_start_assistent_projekt_start_assistent",
+      "target": "docs_projekt_start_assistent_bestehende_projekte",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_projekt_start_assistent_projekt_start_assistent",
+      "target": "docs_projekt_start_assistent_skill_audit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_projekt_start_assistent_projekt_start_assistent",
+      "target": "docs_projekt_start_assistent_tägliche_zusammenarbeit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/projekt-start-assistent.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_setup",
+      "target": "docs_setup_setup_und_ersteinrichtung",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/setup.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_setup_setup_und_ersteinrichtung",
+      "target": "docs_setup_voraussetzungen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/setup.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_setup_setup_und_ersteinrichtung",
+      "target": "docs_setup_skill_installieren",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/setup.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_setup_setup_und_ersteinrichtung",
+      "target": "docs_setup_bestehendes_projekt_anschliessen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/setup.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_setup_setup_und_ersteinrichtung",
+      "target": "docs_setup_neues_projekt_einrichten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/setup.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_setup_setup_und_ersteinrichtung",
+      "target": "docs_setup_interaktive_html_übersicht_einrichten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/setup.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_setup_setup_und_ersteinrichtung",
+      "target": "docs_setup_sicherer_update_ablauf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/setup.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_setup_setup_und_ersteinrichtung",
+      "target": "docs_setup_autopilot_verbindlich_verwenden",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/setup.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_setup",
+      "target": "docs_autopilot_integration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/setup.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_wissen",
+      "target": "docs_wissen_wissen_alles_wichtige_an_einem_projektstand_pflegen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/wissen.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_wissen_wissen_alles_wichtige_an_einem_projektstand_pflegen",
+      "target": "docs_wissen_was_passiert_dabei",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/wissen.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_wissen_wissen_alles_wichtige_an_einem_projektstand_pflegen",
+      "target": "docs_wissen_einfacher_ablauf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/wissen.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_wissen_wissen_alles_wichtige_an_einem_projektstand_pflegen",
+      "target": "docs_wissen_statuszeichen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/wissen.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "docs_wissen_wissen_alles_wichtige_an_einem_projektstand_pflegen",
+      "target": "docs_wissen_wichtige_grenze",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/wissen.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill",
+      "target": "skills_living_documentation_skill_living_documentation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_living_documentation",
+      "target": "skills_living_documentation_skill_verbindliche_autopilot_integration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill",
+      "target": "skills_living_documentation_references_autopilot_integration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_living_documentation",
+      "target": "skills_living_documentation_skill_zuerst_einordnen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_living_documentation",
+      "target": "skills_living_documentation_skill_begleit_skill_check_bei_erstlauf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_begleit_skill_check_bei_erstlauf",
+      "target": "skills_living_documentation_skill_woran_erstlauf_in_diesem_projekt_erkannt_wird",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_begleit_skill_check_bei_erstlauf",
+      "target": "skills_living_documentation_skill_1_prüfen_was_bereits_installiert_ist",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_begleit_skill_check_bei_erstlauf",
+      "target": "skills_living_documentation_skill_2_bei_fehlenden_skills_aktiv_nachfragen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_begleit_skill_check_bei_erstlauf",
+      "target": "skills_living_documentation_skill_3_ergebnis_dokumentieren",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_living_documentation",
+      "target": "skills_living_documentation_skill_was_festgehalten_wird",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_living_documentation",
+      "target": "skills_living_documentation_skill_beim_aufbau_einer_neuen_dokumentation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L183",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill",
+      "target": "skills_living_documentation_references_dokumentationsmodell",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L188",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_living_documentation",
+      "target": "skills_living_documentation_skill_bei_änderungen_am_projekt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L193",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_living_documentation",
+      "target": "skills_living_documentation_skill_interaktive_living_documentation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L208",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_living_documentation",
+      "target": "skills_living_documentation_skill_sicherheits_und_veröffentlichungsgrenzen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L240",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_skill_living_documentation",
+      "target": "skills_living_documentation_skill_qualitätsmassstab",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/SKILL.md",
+      "source_location": "L255",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_autopilot_integration",
+      "target": "skills_living_documentation_references_autopilot_integration_autopilot_integration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_autopilot_integration_autopilot_integration",
+      "target": "skills_living_documentation_references_autopilot_integration_verbindliche_zuordnung",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_autopilot_integration_autopilot_integration",
+      "target": "skills_living_documentation_references_autopilot_integration_geeignete_einträge",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_autopilot_integration_geeignete_einträge",
+      "target": "skills_living_documentation_references_autopilot_integration_laufvertrag",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_autopilot_integration_geeignete_einträge",
+      "target": "skills_living_documentation_references_autopilot_integration_teilziel_abgeschlossen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_autopilot_integration_autopilot_integration",
+      "target": "skills_living_documentation_references_autopilot_integration_grenzen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/autopilot-integration.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_dokumentationsmodell",
+      "target": "skills_living_documentation_references_dokumentationsmodell_dokumentationsmodell",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_dokumentationsmodell_dokumentationsmodell",
+      "target": "skills_living_documentation_references_dokumentationsmodell_sinnvoller_minimalumfang",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_dokumentationsmodell_dokumentationsmodell",
+      "target": "skills_living_documentation_references_dokumentationsmodell_vorlagen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_dokumentationsmodell_vorlagen",
+      "target": "skills_living_documentation_references_dokumentationsmodell_entscheidung",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_dokumentationsmodell_vorlagen",
+      "target": "skills_living_documentation_references_dokumentationsmodell_offener_punkt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_dokumentationsmodell_vorlagen",
+      "target": "skills_living_documentation_references_dokumentationsmodell_risiko",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_dokumentationsmodell_vorlagen",
+      "target": "skills_living_documentation_references_dokumentationsmodell_verifikation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_living_documentation_references_dokumentationsmodell_dokumentationsmodell",
+      "target": "skills_living_documentation_references_dokumentationsmodell_externe_kopien",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/living-documentation/references/dokumentationsmodell.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_skill",
+      "target": "skills_project_start_assistant_skill_kompatibilitätsverweis_projekt_start_assistent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_skill_kompatibilitätsverweis_projekt_start_assistent",
+      "target": "skills_project_start_assistant_skill_modus_wählen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_skill",
+      "target": "skills_project_start_assistant_references_projektstruktur",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_skill_kompatibilitätsverweis_projekt_start_assistent",
+      "target": "skills_project_start_assistant_skill_unverhandelbare_schutzbereiche",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_skill_kompatibilitätsverweis_projekt_start_assistent",
+      "target": "skills_project_start_assistant_skill_globale_arbeitsregeln_im_projekt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_skill",
+      "target": "skills_project_start_assistant_references_globale_agentenregeln",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_skill_kompatibilitätsverweis_projekt_start_assistent",
+      "target": "skills_project_start_assistant_skill_dashboard_und_verständliche_einführung",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_skill_kompatibilitätsverweis_projekt_start_assistent",
+      "target": "skills_project_start_assistant_skill_skill_audit_und_empfehlungen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_skill",
+      "target": "skills_project_start_assistant_references_skill_audit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_skill_kompatibilitätsverweis_projekt_start_assistent",
+      "target": "skills_project_start_assistant_skill_abschluss_eines_projektstarts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_skill",
+      "target": "skills_project_start_assistant_references_bestandsprojekte",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/SKILL.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_assets_project_template_agent_global_rules_template",
+      "target": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_globale_agentenregeln",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_globale_agentenregeln",
+      "target": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_verständlich_und_sparsam_arbeiten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_globale_agentenregeln",
+      "target": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_agenten_und_prozesse_steuern",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_globale_agentenregeln",
+      "target": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_schützen_statt_raten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_globale_agentenregeln",
+      "target": "skills_project_start_assistant_assets_project_template_agent_global_rules_template_prüfen_und_aufräumen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/assets/project-template/AGENT_GLOBAL_RULES.template.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_assets_project_template_user_concept_readme",
+      "target": "skills_project_start_assistant_assets_project_template_user_concept_readme_user_concept",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/assets/project-template/USER CONCEPT/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_bestandsprojekte",
+      "target": "skills_project_start_assistant_references_bestandsprojekte_bestehende_projekte_sicher_übernehmen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/bestandsprojekte.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_bestandsprojekte_bestehende_projekte_sicher_übernehmen",
+      "target": "skills_project_start_assistant_references_bestandsprojekte_reihenfolge",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/bestandsprojekte.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_bestandsprojekte_bestehende_projekte_sicher_übernehmen",
+      "target": "skills_project_start_assistant_references_bestandsprojekte_nie_automatisch_tun",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/bestandsprojekte.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_bestandsprojekte_bestehende_projekte_sicher_übernehmen",
+      "target": "skills_project_start_assistant_references_bestandsprojekte_erfolgskriterien",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/bestandsprojekte.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_globale_agentenregeln",
+      "target": "skills_project_start_assistant_references_globale_agentenregeln_globale_agentenregeln",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/globale-agentenregeln.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_globale_agentenregeln_globale_agentenregeln",
+      "target": "skills_project_start_assistant_references_globale_agentenregeln_modell_und_limits",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/globale-agentenregeln.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_globale_agentenregeln_globale_agentenregeln",
+      "target": "skills_project_start_assistant_references_globale_agentenregeln_agentenpool_und_prozesskontrolle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/globale-agentenregeln.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_globale_agentenregeln_globale_agentenregeln",
+      "target": "skills_project_start_assistant_references_globale_agentenregeln_project_clean",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/globale-agentenregeln.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_projektstruktur",
+      "target": "skills_project_start_assistant_references_projektstruktur_projektstruktur_und_vorlagen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/projektstruktur.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_projektstruktur_projektstruktur_und_vorlagen",
+      "target": "skills_project_start_assistant_references_projektstruktur_gitignore_ergänzen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/projektstruktur.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_projektstruktur_projektstruktur_und_vorlagen",
+      "target": "skills_project_start_assistant_references_projektstruktur_secrets_readme_md",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/projektstruktur.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_projektstruktur_projektstruktur_und_vorlagen",
+      "target": "skills_project_start_assistant_references_projektstruktur_secrets_zugangsdaten_template_md",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/projektstruktur.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_projektstruktur_projektstruktur_und_vorlagen",
+      "target": "skills_project_start_assistant_references_projektstruktur_user_concept_readme_md",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/projektstruktur.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_skill_audit",
+      "target": "skills_project_start_assistant_references_skill_audit_skill_audit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/skill-audit.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_skill_audit_skill_audit",
+      "target": "skills_project_start_assistant_references_skill_audit_berichtsvorlage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/skill-audit.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_project_start_assistant_references_skill_audit_skill_audit",
+      "target": "skills_project_start_assistant_references_skill_audit_regeln",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/project-start-assistant/references/skill-audit.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_wissen_skill",
+      "target": "skills_wissen_skill_wissen_projektwissen_aktualisieren",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_wissen_skill_wissen_projektwissen_aktualisieren",
+      "target": "skills_wissen_skill_die_drei_orte_haben_verschiedene_aufgaben",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_wissen_skill_wissen_projektwissen_aktualisieren",
+      "target": "skills_wissen_skill_ablauf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_wissen_skill_wissen_projektwissen_aktualisieren",
+      "target": "skills_wissen_skill_einheitliche_statuszeichen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_wissen_skill_wissen_projektwissen_aktualisieren",
+      "target": "skills_wissen_skill_sicherheitsgrenzen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "skills_wissen_skill_wissen_projektwissen_aktualisieren",
+      "target": "skills_wissen_skill_abschlussformat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "skills/wissen/SKILL.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_arbeitsweise",
+      "target": "wiki_arbeitsweise_arbeitsweise",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Arbeitsweise.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_arbeitsweise_arbeitsweise",
+      "target": "wiki_arbeitsweise_die_fünf_informationsarten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Arbeitsweise.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_arbeitsweise_arbeitsweise",
+      "target": "wiki_arbeitsweise_aktualisieren_nach_einer_änderung",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Arbeitsweise.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_arbeitsweise_arbeitsweise",
+      "target": "wiki_arbeitsweise_entscheidungsvorlage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Arbeitsweise.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_arbeitsweise_arbeitsweise",
+      "target": "wiki_arbeitsweise_gute_übergabe",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Arbeitsweise.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_autopilot_integration",
+      "target": "wiki_autopilot_integration_autopilot_integration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Autopilot-Integration.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_autopilot_integration_autopilot_integration",
+      "target": "wiki_autopilot_integration_verbindliche_zuordnung",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Autopilot-Integration.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_autopilot_integration_autopilot_integration",
+      "target": "wiki_autopilot_integration_laufvertrag",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Autopilot-Integration.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_autopilot_integration_autopilot_integration",
+      "target": "wiki_autopilot_integration_teilziel_dokumentieren",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Autopilot-Integration.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_autopilot_integration_autopilot_integration",
+      "target": "wiki_autopilot_integration_grenzen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Autopilot-Integration.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_datenformat",
+      "target": "wiki_datenformat_datenformat",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Datenformat.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_datenformat_datenformat",
+      "target": "wiki_datenformat_eintrag",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Datenformat.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_datenformat_datenformat",
+      "target": "wiki_datenformat_regeln",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Datenformat.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_datenformat_datenformat",
+      "target": "wiki_datenformat_bearbeitung_durch_agenten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Datenformat.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home",
+      "target": "wiki_home_mgd_living_documentation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home_mgd_living_documentation",
+      "target": "wiki_home_schnell_verstehen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home",
+      "target": "wiki_wissen",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home_mgd_living_documentation",
+      "target": "wiki_home_wofür",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home_mgd_living_documentation",
+      "target": "wiki_home_leitprinzipien",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home_mgd_living_documentation",
+      "target": "wiki_home_schnellreferenz",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home_mgd_living_documentation",
+      "target": "wiki_home_navigation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home",
+      "target": "wiki_installation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home",
+      "target": "wiki_arbeitsweise",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home",
+      "target": "wiki_interaktive_uebersicht",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home",
+      "target": "wiki_datenformat",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home",
+      "target": "wiki_sicherheit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home",
+      "target": "wiki_integration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home",
+      "target": "wiki_autopilot_integration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_home",
+      "target": "wiki_projekt_start_assistent",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Home.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_installation",
+      "target": "wiki_installation_installation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_installation_installation",
+      "target": "wiki_installation_voraussetzungen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_installation_installation",
+      "target": "wiki_installation_chatgpt_codex",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_installation_installation",
+      "target": "wiki_installation_claude_code",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_installation_installation",
+      "target": "wiki_installation_andere_agenten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_installation_installation",
+      "target": "wiki_installation_erstes_projekt_anschliessen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Installation.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration",
+      "target": "wiki_integration_integration_in_den_projektalltag",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration_integration_in_den_projektalltag",
+      "target": "wiki_integration_mit_git",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration_integration_in_den_projektalltag",
+      "target": "wiki_integration_mit_tests_und_releases",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration_integration_in_den_projektalltag",
+      "target": "wiki_integration_mit_aufgabenlisten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration_integration_in_den_projektalltag",
+      "target": "wiki_integration_mit_wissen_und_graphify",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration",
+      "target": "wiki_wissen",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration_integration_in_den_projektalltag",
+      "target": "wiki_integration_mit_autopilot",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration",
+      "target": "wiki_autopilot_integration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration_integration_in_den_projektalltag",
+      "target": "wiki_integration_mit_dem_projekt_start_assistenten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration",
+      "target": "wiki_projekt_start_assistent",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration_integration_in_den_projektalltag",
+      "target": "wiki_integration_mit_externem_wiki",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration_integration_in_den_projektalltag",
+      "target": "wiki_integration_mit_den_anderen_mgd_skills",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration",
+      "target": "skills_living_documentation_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration_mit_den_anderen_mgd_skills",
+      "target": "wiki_integration_mgd_dev_skill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration",
+      "target": "wiki_arbeitsweise",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration",
+      "target": "changelog",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration_mit_den_anderen_mgd_skills",
+      "target": "wiki_integration_fragenkatalog_skill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration",
+      "target": "wiki_sicherheit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_integration_mit_den_anderen_mgd_skills",
+      "target": "wiki_integration_mgd_todo_skill",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Integration.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_interaktive_uebersicht",
+      "target": "wiki_interaktive_uebersicht_interaktive_übersicht",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Interaktive-Uebersicht.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_interaktive_uebersicht_interaktive_übersicht",
+      "target": "wiki_interaktive_uebersicht_bedienung",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Interaktive-Uebersicht.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_interaktive_uebersicht_interaktive_übersicht",
+      "target": "wiki_interaktive_uebersicht_dauerhaft_speichern",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Interaktive-Uebersicht.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_interaktive_uebersicht_interaktive_übersicht",
+      "target": "wiki_interaktive_uebersicht_entfernen_oder_archivieren",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Interaktive-Uebersicht.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_interaktive_uebersicht_interaktive_übersicht",
+      "target": "wiki_interaktive_uebersicht_mehrbenutzergrenze",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Interaktive-Uebersicht.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_projekt_start_assistent",
+      "target": "wiki_projekt_start_assistent_projekt_start_assistent_kompatibilitätsverweis",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_projekt_start_assistent_projekt_start_assistent_kompatibilitätsverweis",
+      "target": "wiki_projekt_start_assistent_was_entsteht",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_projekt_start_assistent_projekt_start_assistent_kompatibilitätsverweis",
+      "target": "wiki_projekt_start_assistent_dashboard_überall_nutzen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_projekt_start_assistent_projekt_start_assistent_kompatibilitätsverweis",
+      "target": "wiki_projekt_start_assistent_schutzbereiche",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_projekt_start_assistent_projekt_start_assistent_kompatibilitätsverweis",
+      "target": "wiki_projekt_start_assistent_bestehende_projekte",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_projekt_start_assistent_projekt_start_assistent_kompatibilitätsverweis",
+      "target": "wiki_projekt_start_assistent_skill_audit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Projekt-Start-Assistent.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme",
+      "target": "wiki_readme_wiki_quellen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme_wiki_quellen",
+      "target": "wiki_readme_seiten",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme",
+      "target": "wiki_home",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme",
+      "target": "wiki_installation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme",
+      "target": "wiki_arbeitsweise",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme",
+      "target": "wiki_interaktive_uebersicht",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme",
+      "target": "wiki_datenformat",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme",
+      "target": "wiki_sicherheit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme",
+      "target": "wiki_integration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme",
+      "target": "wiki_autopilot_integration",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme",
+      "target": "wiki_projekt_start_assistent",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme",
+      "target": "wiki_wissen",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_readme_wiki_quellen",
+      "target": "wiki_readme_github_wiki_kontrolliert_aktualisieren",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/README.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_sicherheit",
+      "target": "wiki_sicherheit_sicherheit_und_veröffentlichung",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Sicherheit.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_sicherheit_sicherheit_und_veröffentlichung",
+      "target": "wiki_sicherheit_vor_dem_push_oder_wiki_sync",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Sicherheit.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_sicherheit_sicherheit_und_veröffentlichung",
+      "target": "wiki_sicherheit_quellen_und_verweise",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Sicherheit.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_wissen",
+      "target": "wiki_wissen_wissen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Wissen.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_wissen_wissen",
+      "target": "wiki_wissen_die_statuszeichen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Wissen.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_wissen",
+      "target": "skills_wissen_skill",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Wissen.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "wiki_wissen",
+      "target": "docs_wissen",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/Wissen.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "directed": false
+}
