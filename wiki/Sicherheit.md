@@ -26,9 +26,9 @@ HTML-Übersicht oder Wiki:
 Quellbaum. Deshalb gilt vor dem ersten `graphify update .`:
 
 - `SECRETS/` und `USER CONCEPT/` stehen in `.graphifyignore` und `.gitignore`.
-- `graphify-out/.graphify_python` und `graphify-out/.graphify_root` halten Pfade
-  dieser Maschine und werden nie committet; die Git-Hooks führen den in
-  `.graphify_python` genannten Interpreter aus.
+- `graphify-out/.graphify_python` und `graphify-out/.graphify_root` enthalten
+  Pfade von deinem Rechner und werden nie ins Git übernommen. Die Git-Hooks
+  starten das Python-Programm, das in `.graphify_python` steht.
 - Git-Hooks, `graphify install --platform claude` (globale `~/.claude/CLAUDE.md`)
   und `graphify claude install` (`CLAUDE.md` und `.claude/settings.json` mit
   absolutem Pfad) gibt es nur auf ausdrücklichen Wunsch.

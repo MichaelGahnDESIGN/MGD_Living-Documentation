@@ -1,63 +1,91 @@
 # Karte (Graphify)
 
-[Graphify](https://github.com/Graphify-Labs/graphify) baut aus Code und
-Markdown eines Projekts einen Wissensgraphen im Ordner `graphify-out/`. Living
-Documentation nutzt ihn als **Karte**: Er zeigt, was existiert und wovon es
-abhängt. Die Dokumentation bleibt für alles zuständig, was *gilt*.
+## Worum geht es?
+
+[Graphify](https://github.com/Graphify-Labs/graphify) liest deinen Code und
+deine Markdown-Dateien und baut daraus eine **Karte** deines Projekts. Auf der
+Karte steht, **was es gibt** und **was woran hängt**. Sie liegt im Ordner
+`graphify-out/`.
+
+Die Karte sagt dir **nicht**, was gilt. Das steht in der Dokumentation.
 
 ## Wer ist wofür zuständig?
 
-| Frage | Besitzer | Ort im Projekt |
+| Frage | Zuständig | Ort im Projekt |
 | --- | --- | --- |
-| Was ist bestätigt, entschieden, offen, riskant? | Living Documentation | `DOKUMENTATION/` oder die vorhandene kanonische Quelle |
-| Was existiert und wovon hängt es ab? | Graphify | `graphify-out/` |
+| Was ist bestätigt, entschieden, offen oder riskant? | Living Documentation | `DOKUMENTATION/` (oder dein vorhandener Dokuordner) |
+| Was gibt es, und was hängt woran? | Graphify | `graphify-out/` |
 | Was ist zu tun? | Todo-Skill | `TODO/TODO.html` |
 
-Jede Aussage hat genau einen Besitzer; verlinken statt kopieren. Die Karte ist
-abgeleitet: Sie wird nie von Hand geändert und nie als Entscheidung,
-Statusbericht, Testergebnis oder Freigabe zitiert.
+Jede Aussage hat genau **einen** Besitzer. Verlinke sie, statt sie zu
+wiederholen.
 
-## Arbeitszyklus
+⚠️ Die Karte wird nie von Hand geändert. Sie ist kein Beweis, dass etwas
+funktioniert, und keine Freigabe.
 
-1. Strukturfragen zuerst an den Graphen: `graphify query "<Frage>"`,
-   `graphify path "<A>" "<B>"`, `graphify explain "<Begriff>"`,
-   `graphify affected "<X>"`.
-2. Nach jedem abgeschlossenen Teilziel: Todo aktualisieren, Dokumentation
-   anpassen, `graphify update .` ausführen.
-3. Architekturaussagen nennen ihren Beleg (Befehl, Datum, Stand). Als Beleg
-   zählen nur Kanten mit der Konfidenz `EXTRACTED`.
-4. Nichts erzwingen: Verweigert `graphify update .` einen kleineren Graphen,
-   zuerst die Ursache klären.
+## So arbeitest du
 
-`graphify update .` arbeitet lokal, ohne Sprachmodell und ohne Netzwerk.
+1. **Erst die Karte fragen, dann suchen:**
+   - `graphify query "<Frage>"` beantwortet eine Frage.
+   - `graphify path "<A>" "<B>"` zeigt den Weg zwischen zwei Dingen.
+   - `graphify explain "<Begriff>"` erklärt ein Ding.
+   - `graphify affected "<X>"` zeigt, was betroffen ist.
+2. **Teilziel fertig?** Dann in dieser Reihenfolge: Todo-Liste aktualisieren,
+   Dokumentation anpassen, `graphify update .` ausführen.
+3. **Nenne den Beleg.** Schreibe zu jeder Aussage über den Aufbau: Befehl,
+   Datum und Stand. Als sicherer Beleg zählt nur, was Graphify als `EXTRACTED`
+   markiert („steht direkt im Code“). `INFERRED` heißt „vermutet“ und
+   `AMBIGUOUS` heißt „unklar“.
+4. **Nichts erzwingen.** Will `graphify update .` eine kleinere Karte nicht
+   speichern, finde zuerst den Grund heraus.
 
-## Was gehört nicht in den Graphen und nicht in Git?
+`graphify update .` arbeitet nur auf deinem Rechner. Es braucht kein
+KI-Modell und kein Internet.
 
-- **Nicht in den Graphen** (`.graphifyignore`): `.claude/`, `.agents/`,
-  `.codex/`, `TODO/`, `.mgd/graphify-venv/`, `graphify-out/` sowie `SECRETS/`
-  und `USER CONCEPT/`, falls vorhanden.
-- **Nicht in Git** (`.gitignore`): `graphify-out/cache/`,
-  `graphify-out/.graphify_python`, `graphify-out/.graphify_root`, die datierten
-  Sicherungsordner in `graphify-out/` und `.mgd/graphify-venv/`. Die beiden
-  Punkt-Dateien halten Pfade dieser Maschine.
-- **Versioniert:** `graph.json` und `GRAPH_REPORT.md`.
+## Was bleibt draußen?
 
-Die vollständigen Blöcke zum Kopieren stehen in
+**Nicht auf die Karte** (Datei `.graphifyignore`): `.claude/`, `.agents/`,
+`.codex/`, `TODO/`, `.mgd/graphify-venv/`, `graphify-out/`, und falls es sie
+gibt `SECRETS/` und `USER CONCEPT/`.
+
+**Nicht ins Git** (Datei `.gitignore`):
+- `graphify-out/cache/` (Zwischenspeicher)
+- `graphify-out/.graphify_python` und `graphify-out/.graphify_root` (das sind
+  Pfade auf deinem Rechner)
+- die Sicherungsordner mit Datum in `graphify-out/`
+- `.mgd/graphify-venv/` (die Python-Umgebung nur für dieses Projekt)
+
+✅ **Ins Git** kommen `graph.json` und `GRAPH_REPORT.md`.
+
+Die fertigen Blöcke zum Kopieren stehen in
 [docs/karte-graphify.md](../docs/karte-graphify.md).
 
-## Einrichten und Grenzen
+## Einrichten
 
-Graphify wird nie still installiert; der Agent fragt zuerst nach der
-Installationsart (für alle Projekte, nur dieses Projekt oder später). Git-Hooks
-(`graphify hook install`), die globale Agent-Registrierung
-(`graphify install --platform claude`) und `graphify claude install` gibt es
-nur auf ausdrücklichen Wunsch. Der Zyklus funktioniert ohne sie.
+⚠️ Graphify wird nie heimlich installiert. Dein Agent fragt dich zuerst:
+für alle Projekte, nur für dieses Projekt oder später?
 
-Die gemeinsame Installation von Living Documentation, Graphify und Todo
-übernimmt der
-[MGD-Plattform-Builder](https://github.com/MichaelGahnDESIGN/MGD-Plattform-Builder)
-(ab Version 0.7.0). Er nimmt für neue Projekte automatisch das neueste Release
-dieses Repositories.
+Diese Dinge passieren **nur auf deinen ausdrücklichen Wunsch**:
+- `graphify hook install` startet nach jedem Commit automatisch Python in
+  deinem Projektordner (sogenannte Git-Hooks).
+- `graphify install --platform claude` schreibt in deine **globale**
+  `~/.claude/CLAUDE.md`.
+- `graphify claude install` ändert die `CLAUDE.md` und die
+  `.claude/settings.json` **dieses Projekts**.
 
-Die Karte ersetzt weder Tests noch die Gegenprobe am echten Ziel. Statische
-Analyse sieht keine Laufzeitwege, Konfiguration oder Datenbestände.
+Ohne diese drei Befehle funktioniert alles oben.
+
+## Der MGD-Plattform-Builder
+
+Der [MGD-Plattform-Builder](https://github.com/MichaelGahnDESIGN/MGD-Plattform-Builder)
+installiert ab Version 0.7.0 in jedem neuen Projekt Living Documentation,
+Graphify und den Todo-Skill zusammen. Er nimmt dabei immer das **neueste
+Release** dieses Repositories. Du musst im Builder nichts ändern, wenn hier ein
+neues Release erscheint.
+
+## Was die Karte nicht kann
+
+- Sie ersetzt keine Tests und keine Prüfung am echten Ziel.
+- Sie sieht nur, was im Code steht. Was erst beim Ausführen passiert, was in
+  Einstellungen steckt und was in Datenbanken liegt, sieht sie nicht.
+- Sie ist nur so aktuell wie der letzte `graphify update .`.

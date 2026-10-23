@@ -35,11 +35,11 @@ Die vollständige Phasen-Zuordnung und kopierbare Vorlagen stehen unter
 
 ## Mit Graphify
 
-Graphify liefert die maschinell erzeugte Karte des Projekts. Zyklus: Strukturfragen
-zuerst an den Graphen, nach jedem Teilziel Todo, Dokumentation und
-`graphify update .` nachziehen, Architekturaussagen mit Beleg versehen. Die
-Karte bleibt abgeleitet und ist nie Entscheidungs- oder Statusquelle. Details
-stehen unter [Karte (Graphify)](Karte-Graphify).
+Graphify zeichnet eine Karte deines Projekts. So arbeitest du damit: Fragen
+zum Aufbau stellst du zuerst der Karte. Ist ein Teilziel fertig, aktualisierst
+du Todo-Liste, Dokumentation und die Karte (`graphify update .`). Aussagen über
+den Aufbau bekommen einen Beleg. Die Karte ist keine Entscheidung und kein
+Statusbericht. Mehr dazu steht unter [Karte (Graphify)](Karte-Graphify).
 
 ## Mit dem MGD-Plattform-Builder
 
