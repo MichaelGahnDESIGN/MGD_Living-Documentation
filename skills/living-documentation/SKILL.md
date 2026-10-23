@@ -258,3 +258,15 @@ Eine gute lebendige Dokumentation ist knapp genug, um gelesen zu werden, und
 konkret genug, um Entscheidungen ohne Rätsel nachvollziehen zu können. Behaupte
 nicht, dass etwas funktioniert, bereitgestellt oder geprüft sei, wenn dafür
 keine Beobachtung vorliegt.
+
+## Antwort- und Dokumentations-Stil (verbindlich)
+
+- **Einfach schreiben:** so verständlich wie möglich, kurze Sätze, keine unerklärten Fachwörter.
+- **Marker benutzen:**
+  - ❓ Frage an den Nutzer
+  - ⚠️ wichtiger Hinweis
+  - ✅ erledigt
+  - ☑️ noch offen
+  - weitere erlaubt: 🔎 geprüft, 🚫 geht nicht, ➕ neu
+- **READMEs und Wikis für den DAU** (dümmster anzunehmender User) schreiben: Schritt für Schritt, mit Beispiel, ohne Abkürzungen ohne Erklärung.
+- Diese Regeln gelten für alle Texte, die der Skill erzeugt (Doku, TODO, Berichte, Übergaben).
