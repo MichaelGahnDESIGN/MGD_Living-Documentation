@@ -84,7 +84,9 @@ Für den vollständigen Ablauf installiere diese Skill-Ordner:
 - `skills/project-start-assistant` für Projektstart, Migration, Dashboard und
   Skill-Audit.
 - `skills/wissen` für die abgestimmte Pflege von TODO, Graphify und Living
-  Documentation.
+  Documentation. Die identische Fassung liegt zusätzlich im
+  [MGD_Todo_SKILL](https://github.com/MichaelGahnDESIGN/MGD_Todo_SKILL), damit
+  beide Arbeitsorte dieselben Grenzen und Begriffe verwenden.
 
 ### ChatGPT Codex – global
 

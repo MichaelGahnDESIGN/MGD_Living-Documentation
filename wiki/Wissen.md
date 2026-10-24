@@ -22,5 +22,8 @@ Erklärungen durcheinandergeraten.
 kurz, wodurch der Stand belegt ist.
 
 `/wissen` veröffentlicht nichts, löscht nichts und speichert keine Secrets in
-der Dokumentation. Details stehen in der [Arbeitsanweisung](../skills/wissen/SKILL.md)
-und in [docs/wissen.md](../docs/wissen.md).
+der Dokumentation. Der gleiche Skill ist auch Teil von
+[MGD_Todo_SKILL](https://github.com/MichaelGahnDESIGN/MGD_Todo_SKILL), damit
+Aufgaben und Dokumentation dieselben Grenzen kennen. Details stehen in der
+[Arbeitsanweisung](../skills/wissen/SKILL.md) und in
+[docs/wissen.md](../docs/wissen.md).

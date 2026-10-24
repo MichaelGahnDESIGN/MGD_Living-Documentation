@@ -4,6 +4,16 @@ Dieses Repository folgt einer einfachen, nachvollziehbaren Versionsgeschichte.
 Ein Release wird erst eingetragen, wenn der entsprechende Stand veröffentlicht
 ist.
 
+## Unveröffentlicht
+
+### Geändert
+
+- `/wissen` ist jetzt mit dem gleichnamigen Skill in MGD_Todo_SKILL
+  deckungsgleich: klare Trennung von Aufgaben, Graph und dauerhafter
+  Dokumentation, keine automatische private Wissensspeicherung und kein
+  automatisches Veröffentlichen. README, Wiki und Befehlsdateien nennen die
+  gemeinsame Quelle nachvollziehbar.
+
 ## 0.4.0 – 2026-10-24
 
 ### Neu

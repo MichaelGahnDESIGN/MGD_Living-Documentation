@@ -26,7 +26,7 @@ Nach einer Änderung genügt zum Beispiel:
 Der Agent liest zuerst Regeln und den aktuellen Git-Stand. Er aktualisiert
 eine vorhandene TODO-Datei, führt Graphify nur aus, wenn es im Projekt
 eingerichtet ist, und ergänzt die betroffene Living Documentation. Anschließend
-meldet er klar, was belegt ist und was offen blieb.
+prüft er Diff und Links und meldet klar, was belegt ist und was offen blieb.
 
 ## Statuszeichen
 
@@ -43,4 +43,6 @@ meldet er klar, was belegt ist und was offen blieb.
 `/wissen` veröffentlicht nichts automatisch. Ein Commit, ein GitHub-Push und
 ein Live-Deployment sind unterschiedliche Schritte und werden auch getrennt
 berichtet. Zugangsdaten, Backups und persönliche Daten bleiben aus allen
-Dokumentationen draußen.
+Dokumentationen draußen. Die identische Skill-Fassung ist auch Teil von
+[MGD_Todo_SKILL](https://github.com/MichaelGahnDESIGN/MGD_Todo_SKILL), damit
+Aufgaben und Dokumentation dieselben Grenzen kennen.
