@@ -27,3 +27,11 @@ der Dokumentation. Der gleiche Skill ist auch Teil von
 Aufgaben und Dokumentation dieselben Grenzen kennen. Details stehen in der
 [Arbeitsanweisung](../skills/wissen/SKILL.md) und in
 [docs/wissen.md](../docs/wissen.md).
+
+## Vorhandene Dokumentation öffnen
+
+`/wissen-ansehen` zeigt die bestehende Projektdokumentation. HTML wird
+bevorzugt; Markdown bleibt der Rückfall. Der Befehl verändert keine Dateien
+und erzeugt bei fehlender Dokumentation keine neue Ablage. Details und
+Installation: [Anleitung](../docs/wissen.md#dokumentation-ansehen),
+[Skill](../skills/wissen-ansehen/SKILL.md).

@@ -6,6 +6,13 @@ ist.
 
 ## Unveröffentlicht
 
+### Neu
+
+- `/wissen-ansehen` öffnet vorhandene Projektdokumentation ohne Änderungen.
+  Enthalten sind der nur lesende Pfadfinder, Codex-/Claude-Befehle und
+  Tests für Auswahl, fehlende Quellen und Projektgrenzen. `/wissen` 1.2.0
+  verweist auf diesen getrennten Anzeigebefehl.
+
 ### Geändert
 
 - `/wissen` ist jetzt mit dem gleichnamigen Skill in MGD_Todo_SKILL

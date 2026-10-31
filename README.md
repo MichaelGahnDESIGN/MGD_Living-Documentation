@@ -87,20 +87,23 @@ Für den vollständigen Ablauf installiere diese Skill-Ordner:
   Documentation. Die identische Fassung liegt zusätzlich im
   [MGD_Todo_SKILL](https://github.com/MichaelGahnDESIGN/MGD_Todo_SKILL), damit
   beide Arbeitsorte dieselben Grenzen und Begriffe verwenden.
+- `skills/wissen-ansehen` zum Öffnen vorhandener Projektdokumentation ohne
+  Änderungen; derselbe Begleit-Skill ist auch in MGD_Todo_SKILL enthalten.
 
 ### ChatGPT Codex – global
 
-Kopiere beide Skill-Ordner jeweils nach:
+Kopiere die benötigten Skill-Ordner jeweils nach:
 
 ```text
 ~/.codex/skills/living-documentation/
 ~/.codex/skills/project-start-assistant/
 ~/.codex/skills/wissen/
+~/.codex/skills/wissen-ansehen/
 ```
 
 Mit dem Codex-Skill-Installer kann das Repository über den Pfad
 `skills/living-documentation`, `skills/project-start-assistant` oder
-`skills/wissen` installiert werden.
+`skills/wissen` beziehungsweise `skills/wissen-ansehen` installiert werden.
 
 ### Claude Code – projektlokal
 
@@ -150,6 +153,11 @@ richtigen Orten nachzuziehen. Der Ablauf ist bewusst einfach:
 `/wissen` erzeugt keine zweite Aufgabenliste und kopiert nicht automatisch
 Informationen in persönliche Wissensspeicher. Eine kurze Anleitung für den
 Alltag steht in [docs/wissen.md](docs/wissen.md).
+
+Zum reinen Anzeigen genügt `/wissen-ansehen`. Der Befehl öffnet die
+vorhandene Dokumentation, bevorzugt HTML, und verändert keine Inhalte.
+Fehlt eine Doku, meldet er dies. Installation und Beispiele stehen unter
+[Dokumentation ansehen](docs/wissen.md#dokumentation-ansehen).
 
 Für Antworten, TODOs, READMEs und Wikis gelten diese einfachen Zeichen:
 
